@@ -1348,7 +1348,7 @@ pre code {
 }
 @media (max-width: 991px) {
   .sidebar {
-    left: -320px;
+    left: -260px;
   }
   .sidebar-active .sidebar {
     left: 0;
@@ -1363,7 +1363,7 @@ pre code {
     top: 0;
     transition: 0.2s ease-out;
     transition-property: left, right;
-    width: 320px;
+    width: 260px;
     z-index: 20;
   }
   .sidebar a {
@@ -1385,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #5524ff;
+    background: #ff6291;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2727,7 +2727,7 @@ header.header {
 .main-inner {
   border-radius: initial;
   box-sizing: border-box;
-  width: calc(100% - 252px);
+  width: calc(100% - 260px);
 }
 @media (max-width: 991px) {
   .main-inner {
@@ -2736,7 +2736,7 @@ header.header {
   }
 }
 .footer-inner {
-  padding-left: 252px;
+  padding-left: 260px;
 }
 @media (max-width: 991px) {
   .footer-inner {
@@ -2853,7 +2853,7 @@ header.header {
 @media (min-width: 992px) {
   .sidebar {
     position: sticky;
-    top: 12px;
+    top: 20px;
   }
   .sidebar-toggle {
     display: none;
@@ -2864,8 +2864,8 @@ header.header {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
     box-sizing: border-box;
     color: var(--text-color);
-    margin-top: 12px;
-    max-height: calc(100vh - 24px);
+    margin-top: 20px;
+    max-height: calc(100vh - 40px);
     visibility: hidden;
   }
   .site-state-item {
@@ -2927,7 +2927,7 @@ header.header {
 .main-inner .post-block:not(:first-child):not(:first-child) {
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  margin-top: 12px;
+  margin-top: 20px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main-inner .post-block:not(:first-child):not(:first-child) {
@@ -2945,7 +2945,7 @@ header.header {
 .main-inner .pagination {
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  margin-top: 12px;
+  margin-top: 20px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main-inner .tabs-comment,
@@ -3000,12 +3000,12 @@ header.header {
     padding: 8px;
   }
   .posts-expand .post-button {
-    margin: 12px 0;
+    margin: 20px 0;
   }
   .post-block {
-    padding: 12px;
+    padding: 20px;
   }
   .comments {
-    padding: 10px 12px;
+    padding: 10px 20px;
   }
 }
