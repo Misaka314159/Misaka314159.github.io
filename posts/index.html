@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":260,"width_dual_column":240,"display":"post","padding":18,"offset":20},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"minlength":1,"preload":true,"placeholder":"searching..."}}</script><script src="/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":280,"display":"always","padding":20,"offset":30},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"minlength":1,"preload":true,"placeholder":"searching..."}}</script><script src="/js/config.js" defer></script>
 
     <meta name="description" content="Beyond the sky,into the firmament">
 <meta property="og:type" content="website">
@@ -235,6 +235,45 @@
   <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
   </div>
 
+<script>
+/* 背景图自动轮换脚本（带初始背景+调试） */
+document.addEventListener('DOMContentLoaded', function() {
+  // ================== 你的配置（确认图片名和路径！） ==================
+  const bgImages = [
+    '/images/bg1.jpg',  // 必须和source/images里的图片名完全一致
+    '/images/bg2.jpg',
+    '/images/bg3.jpg'
+  ];
+  const rotateInterval = 5000;  // 5秒轮换一次
+  const fadeDuration = 1000;     // 1秒淡入淡出
+  // ===================================================================
+
+  let currentIndex = 0;
+  const body = document.body;
+
+  // 1. 初始化：先设置第一张背景图（关键！原来的脚本少了这步）
+  body.style.backgroundImage = `url(${bgImages[0]})`;
+  // 2. 设置过渡样式
+  body.style.transition = `background-image ${fadeDuration}ms ease-in-out`;
+  body.style.backgroundSize = 'cover';
+  body.style.backgroundPosition = 'center center';
+  body.style.backgroundAttachment = 'fixed';
+  body.style.backgroundRepeat = 'no-repeat';
+
+  // 3. 切换背景图函数（加调试日志，方便看是否执行）
+  function rotateBackground() {
+    currentIndex = (currentIndex + 1) % bgImages.length;
+    body.style.backgroundImage = `url(${bgImages[currentIndex]})`;
+    // 调试日志：按F12看Console，能看到切换的图片名
+    console.log('切换背景图：', bgImages[currentIndex]);
+  }
+
+  // 4. 启动自动轮换
+  setInterval(rotateBackground, rotateInterval);
+  // 调试日志：确认脚本启动了
+  console.log('背景轮换脚本已启动，图片列表：', bgImages);
+});
+</script>
     </div>
   </footer>
 

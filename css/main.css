@@ -1348,7 +1348,7 @@ pre code {
 }
 @media (max-width: 991px) {
   .sidebar {
-    left: -260px;
+    left: -320px;
   }
   .sidebar-active .sidebar {
     left: 0;
@@ -1363,7 +1363,7 @@ pre code {
     top: 0;
     transition: 0.2s ease-out;
     transition-property: left, right;
-    width: 260px;
+    width: 320px;
     z-index: 20;
   }
   .sidebar a {
@@ -1385,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #8fffff;
+    background: #ff5bf7;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1419,7 +1419,7 @@ pre code {
 }
 .sidebar-inner {
   color: #999;
-  padding: 18px 10px;
+  padding: 20px 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -2727,7 +2727,7 @@ header.header {
 .main-inner {
   border-radius: initial;
   box-sizing: border-box;
-  width: calc(100% - 260px);
+  width: calc(100% - 310px);
 }
 @media (max-width: 991px) {
   .main-inner {
@@ -2736,7 +2736,7 @@ header.header {
   }
 }
 .footer-inner {
-  padding-left: 260px;
+  padding-left: 310px;
 }
 @media (max-width: 991px) {
   .footer-inner {
@@ -2746,7 +2746,7 @@ header.header {
   }
 }
 .column {
-  width: 240px;
+  width: 280px;
 }
 @media (max-width: 991px) {
   .column {
@@ -2853,7 +2853,7 @@ header.header {
 @media (min-width: 992px) {
   .sidebar {
     position: sticky;
-    top: 20px;
+    top: 30px;
   }
   .sidebar-toggle {
     display: none;
@@ -2864,8 +2864,8 @@ header.header {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
     box-sizing: border-box;
     color: var(--text-color);
-    margin-top: 20px;
-    max-height: calc(100vh - 40px);
+    margin-top: 30px;
+    max-height: calc(100vh - 60px);
     visibility: hidden;
   }
   .site-state-item {
@@ -2927,7 +2927,7 @@ header.header {
 .main-inner .post-block:not(:first-child):not(:first-child) {
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  margin-top: 20px;
+  margin-top: 30px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main-inner .post-block:not(:first-child):not(:first-child) {
@@ -2945,7 +2945,7 @@ header.header {
 .main-inner .pagination {
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  margin-top: 20px;
+  margin-top: 30px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main-inner .tabs-comment,
@@ -3000,13 +3000,13 @@ header.header {
     padding: 8px;
   }
   .posts-expand .post-button {
-    margin: 20px 0;
+    margin: 30px 0;
   }
   .post-block {
-    padding: 20px;
+    padding: 30px;
   }
   .comments {
-    padding: 10px 20px;
+    padding: 10px 30px;
   }
 }
 body {
@@ -3076,4 +3076,32 @@ body {
   color: #666;
   font-size: 14px;
   flex: 1;
+}
+/* 给背景加半透明白色遮罩，保证文字清晰可读 */
+body::before {
+  content: '' !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+/* 最后面的0.8是透明度：0=完全透明，1=完全不透明，可自行微调 */
+  background-color: rgba(255,255,255,0.8) !important;
+  z-index: -1 !important; /* 把遮罩放在最底层，不影响页面内容 */
+}
+body {
+/* 确保背景图切换时不会闪烁 */
+  will-change: background-image !important;
+}
+/* 保留之前的半透明遮罩，保证文字清晰 */
+body::before {
+  content: '' !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgba(255,255,255,0.8) !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
 }
