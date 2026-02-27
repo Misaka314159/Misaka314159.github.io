@@ -1385,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #e91bff;
+    background: #8fffff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3008,4 +3008,72 @@ header.header {
   .comments {
     padding: 10px 20px;
   }
+}
+body {
+  padding: 0 10px;
+}
+.main-inner {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem !important;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.sidebar-inner {
+  padding: 1.5rem !important;
+  box-sizing: border-box;
+}
+.menu-item {
+  margin: 8px 0 !important;
+  padding: 6px 10px !important;
+}
+.site-author {
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 1rem !important;
+  border-bottom: 1px solid #f0f0f0;
+}
+.post-body {
+  padding: 0 1rem !important;
+  line-height: 1.8;
+}
+@media (max-width: 1200px) {
+  .sidebar {
+    display: none !important;
+  }
+  .main-inner {
+    width: 95% !important;
+    padding: 1.5rem !important;
+  }
+}
+.page-links {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.links-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  margin: 10px 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+.links-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.links-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-right: 12px;
+  min-width: 120px;
+}
+.links-desc {
+  color: #666;
+  font-size: 14px;
+  flex: 1;
 }
