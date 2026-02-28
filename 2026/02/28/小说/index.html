@@ -1,101 +1,251 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>点群与空间群</title>
-    <url>/2026/02/27/%E7%82%B9%E7%BE%A4%E4%B8%8E%E7%A9%BA%E9%97%B4%E7%BE%A4/</url>
-    <content><![CDATA[<h1 id="点群与空间群：对称性理论的基础与前沿发展"><a href="#点群与空间群：对称性理论的基础与前沿发展" class="headerlink" title="点群与空间群：对称性理论的基础与前沿发展"></a>点群与空间群：对称性理论的基础与前沿发展</h1><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>点群和空间群是描述晶体对称性的核心数学工具，分别表征宏观几何对称性与微观平移对称性的组合。本文系统梳理了晶体学中32种点群与230种空间群的分类规则及其物理意义，结合群论与实验技术揭示了其在材料物性预测中的关键作用。近年来，随着磁性材料和量子拓扑物态研究的深入，传统空间群理论已拓展至自旋空间群领域，通过分离晶格与自旋自由度，揭示了磁有序材料中超越传统磁群的新奇物理效应。本文还总结了自旋空间群的枚举方法、表示理论及其在反常霍尔效应、自旋劈裂等领域的应用，并展望了其在量子计算与拓扑材料设计中的潜力。</p>
-<p>​关键词​：点群；空间群；自旋空间群；对称性破缺；磁性材料</p>
-<span id="more"></span>
-<h2 id="1：基础概念与理论框架"><a href="#1：基础概念与理论框架" class="headerlink" title="1：基础概念与理论框架"></a>1：基础概念与理论框架</h2><h3 id="1-1：点群"><a href="#1-1：点群" class="headerlink" title="1.1：点群"></a>1.1：点群</h3><p>点群定义为保持晶体中至少一点固定的对称操作集合，是描述晶体或分子对称性的数学工具。</p>
-<p>其中对称操作有旋转，反演，反映，这些操作都满足正交变换。点群仅描述方向对称性，不涉及平移操作。在晶体学中，由于周期性限制，可以证明旋转轴仅允许1、2、3、4、6次（排除5次轴）。在三维晶体中存在32种点群，根据对称元素组合分为7大晶系。</p>
-<p>同时，由于晶体按周期性排列，我们可以更加直观地用晶格的几何形状进行分类，得到7大晶系。</p>
-<p>点群通过对称元素的组合（如旋转轴与镜面）决定晶体的宏观性质（如分子极性、光谱活性），是分析材料物理化学性质的基础。</p>
-<h3 id="1-2：空间群"><a href="#1-2：空间群" class="headerlink" title="1.2：空间群"></a>1.2：空间群</h3><p>空间群是点群与平移操作的结合，描述晶体微观对称性​，即原子排列的周期性对称，共230种，由俄国学者费多洛夫与德国学者薛弗利斯于1891年独立提出。<br>空间群分为​点式空间群​（73种）和​非点式空间群​（157种）。​点式空间群仅含点对称操作（旋转、反射）与晶格平移，如简单立方晶系的Pm3m。​非点式空间群引入微观对称元素​，如螺旋轴​（如4₁轴），旋转后沿轴平移分数周期（如1/4晶胞长度）和滑移面​（如a、n、d型）：反射后沿特定方向滑移（如沿晶轴平移1/2周期）。</p>
-<p>​数学形式​上，空间群可表示为平移群（T）与点群（P）的半直积​：S=T⋊P，反映点群操作对平移向量的作用。在​国际符号​表示上，空间群符号由 ​格子类型（Lattice Type）​​ 和 ​对称元素方向（Symmetry Elements）​​ 构成，形式为 ​LS₁S₂S₃。例如，空间群P4₂/ncm表示：<br>​P​：简单四方格子；<br>​4₂​：4次螺旋轴（旋转90°后平移1/2周期）；<br>​n​：对角线滑移面；<br>​c​：轴向滑移面。</p>
-<h2 id="2：前沿研究——自旋空间群的突破"><a href="#2：前沿研究——自旋空间群的突破" class="headerlink" title="2：前沿研究——自旋空间群的突破"></a>2：前沿研究——自旋空间群的突破</h2><h3 id="2-1：自旋空间群的研究与发展"><a href="#2-1：自旋空间群的研究与发展" class="headerlink" title="2.1：自旋空间群的研究与发展"></a>2.1：自旋空间群的研究与发展</h3><p>在20世纪上半叶，科学家们开始意识到除了几何对称性外，磁性材料还表现出了额外的对称性。这些对称性与材料内部的原子或离子内禀的自旋自由度有关。20世纪中叶，晶体学家Alexei V. Shubnikov等人将使自旋翻转的反对称操作引入空间群，用于磁性材料的对称性分析，并提出了磁性点群和磁性空间群。</p>
-<p>随着对磁性材料更深入的研究，人们逐渐意识到需要一个更加全面的群来完全表征磁有序材料的几何形状和物理性质。这源于自旋磁矩作为材料的内秉自由度，除了翻转属性外还具有可旋转的轴矢量属性。因此，自旋空间的对称操作在不考虑与晶格耦合的情况下，可以独立于晶格对称操作而存在。一个典型的例子是晶体中的顺磁——铁磁相变对应的是自旋SU(2)旋转对称性的破缺。而在磁群中，自旋和晶格的转动是严格锁定在一起的。如果要完整描述磁有序材料的构型，需要将晶格和自旋空间的对称操作分开考虑（如图1），从而构成一个更庞大的群——自旋群，包括自旋点群和自旋空间群。</p>
-<p>目前已发现1421种共线自旋群与超10万种非共线自旋空间群，涵盖立方、六方等晶系。</p>
-<h3 id="2-2：自旋空间群的枚举"><a href="#2-2：自旋空间群的枚举" class="headerlink" title="2.2：自旋空间群的枚举"></a>2.2：自旋空间群的枚举</h3><p>自旋空间群是描述磁性材料中晶格与自旋自由度独立或耦合对称性的数学框架，其核心在于将传统磁空间群扩展至包含自旋空间的连续旋转对称性。</p>
-<p>相比于自旋点群，自旋空间群由于允许任意的平移扩胞，导致自旋空间不再只允许2、3、4和6重转动，因此理论上也存在无穷多个自旋空间群。从230个晶体空间群和最大阶数为8的有限平移群出发(即允许磁结构导致的8倍扩胞)，遍历了所有晶体空间群的不等价的正规子群，并通过不等价的同构关系可以建立它们与自旋空间中描述自旋分布的点群的映射。</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>晶系</th>
-<th style="text-align:right">共线</th>
-<th style="text-align:right">非共线</th>
-<th style="text-align:right">总数</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>三斜(2)</td>
-<td style="text-align:right">5</td>
-<td style="text-align:right">55</td>
-<td style="text-align:right">60</td>
-</tr>
-<tr>
-<td>单斜(13)</td>
-<td style="text-align:right">78</td>
-<td style="text-align:right">3540</td>
-<td style="text-align:right">3618</td>
-</tr>
-<tr>
-<td>正交(59)</td>
-<td style="text-align:right">503</td>
-<td style="text-align:right">53734</td>
-<td style="text-align:right">54237</td>
-</tr>
-<tr>
-<td>四方(68)</td>
-<td style="text-align:right">502</td>
-<td style="text-align:right">31185</td>
-<td style="text-align:right">31687</td>
-</tr>
-<tr>
-<td>三方(25)</td>
-<td style="text-align:right">83</td>
-<td style="text-align:right">2393</td>
-<td style="text-align:right">2476</td>
-</tr>
-<tr>
-<td>六方(27)</td>
-<td style="text-align:right">137</td>
-<td style="text-align:right">7260</td>
-<td style="text-align:right">7397</td>
-</tr>
-<tr>
-<td>立方(36)</td>
-<td style="text-align:right">113</td>
-<td style="text-align:right">1024</td>
-<td style="text-align:right">1137</td>
-</tr>
-<tr>
-<td>​<strong>总数(230)​</strong>​</td>
-<td style="text-align:right">1421</td>
-<td style="text-align:right">99191</td>
-<td style="text-align:right">100612</td>
-</tr>
-</tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":280,"display":"always","padding":20,"offset":30},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="尝试用ai辅助写的小说，不定期连载中……">
+<meta property="og:type" content="article">
+<meta property="og:title" content="龙与月之魔女">
+<meta property="og:url" content="http://example.com/2026/02/28/%E5%B0%8F%E8%AF%B4/index.html">
+<meta property="og:site_name" content="Misaka&#39;s Blog">
+<meta property="og:description" content="尝试用ai辅助写的小说，不定期连载中……">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-02-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-02-28T15:39:28.303Z">
+<meta property="article:author" content="T_Maxwell">
+<meta property="article:tag" content="小说">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2026/02/28/%E5%B0%8F%E8%AF%B4/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2026/02/28/%E5%B0%8F%E8%AF%B4/","path":"2026/02/28/小说/","title":"龙与月之魔女"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>龙与月之魔女 | Misaka's Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Misaka's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
 </div>
-<h3 id="2-3：自旋空间群的物理效应"><a href="#2-3：自旋空间群的物理效应" class="headerlink" title="2.3：自旋空间群的物理效应"></a>2.3：自旋空间群的物理效应</h3><p>​1. 自旋劈裂：共面反铁磁体CeAuAl₃的螺旋序诱导动量依赖自旋极化​在共面反铁磁体CeAuAl₃中，螺旋磁序通过破坏时间-空间反演对称性（如自旋翻转-平移操作的缺失），诱导了动量依赖的自旋极化。</p>
-<p>​2. 几何霍尔效应：非共面反铁磁体CoNb₃S₆的无自旋轨道耦合霍尔电导​在非共面反铁磁体CoNb₃S₆中，自旋空间群的对称性允许实空间磁矩的几何构型直接诱导霍尔效应，无需依赖自旋轨道耦合。</p>
-<p>​3. 自旋群保护的Z₂拓扑相：交错磁体中的预言与观测​自旋空间群理论揭示了交错磁体中受Z₂拓扑保护的物态。</p>
-<h1 id="3-发展前景与挑战"><a href="#3-发展前景与挑战" class="headerlink" title="3. 发展前景与挑战"></a>3. 发展前景与挑战</h1><p>自旋空间群理论为材料设计提供了新的对称性框架，对量子几何效应调控与新型功能材料的研发，​尤其在调控量子几何效应（如贝里曲率、量子度规）方面具有突破性意义。<br>自旋空间群的不可约表示理论是解析材料电子和磁振子能带的关键工具。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1] Bradley C J，Cracknell A P. The Mathematical Theory of Symmetry in Solids：Representation Theory for Point Groups and Space Groups. Oxford University Press，New York，1972</p>
-<p>[2] Belov N V，Neronova N N，Smirnova T S. Sov. Phys. Crystallogr.，1957，2：311</p>
-<p>[3] Chen, X., Liu, Y., Liu, P. et al. Unconventional magnons in collinear magnets dictated by spin space groups. Nature 640, 349–354 (2025)</p>
-]]></content>
-      <tags>
-        <tag>晶体学</tag>
-        <tag>点群</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>龙与月之魔女</title>
-    <url>/2026/02/28/%E5%B0%8F%E8%AF%B4/</url>
-    <content><![CDATA[<p>尝试用ai辅助写的小说，不定期连载中……</p>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-posts"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>posts</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>links</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%BE%99%E4%B8%8E%E6%9C%88%E4%B9%8B%E9%AD%94%E5%A5%B3"><span class="nav-number">1.</span> <span class="nav-text">龙与月之魔女</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%8F%E7%AB%A0-%E9%BE%99%E4%B8%8E%E6%9C%88%E4%B9%8B%E9%AD%94%E5%A5%B3"><span class="nav-number">1.1.</span> <span class="nav-text">序章 龙与月之魔女</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%8E%8B%E9%83%BD%E7%9A%84%E6%99%A8%E5%85%89"><span class="nav-number">1.2.</span> <span class="nav-text">第一章 王都的晨光</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E9%AD%94%E6%B3%95%E5%85%A5%E5%AD%A6%E6%B5%8B%E8%AF%95"><span class="nav-number">1.3.</span> <span class="nav-text">第二章 魔法入学测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E9%98%81%E6%A5%BC%E4%B8%AD%E7%9A%84%E4%BD%8E%E8%AF%AD"><span class="nav-number">1.4.</span> <span class="nav-text">第三章 阁楼中的低语</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E5%B0%98%E5%B0%81%E7%9A%84%E6%98%9F%E8%BD%A8"><span class="nav-number">1.5.</span> <span class="nav-text">第四章 尘封的星轨</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">T_Maxwell</p>
+  <div class="site-description" itemprop="description">Beyond the sky,into the firmament</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/02/28/%E5%B0%8F%E8%AF%B4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="T_Maxwell">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Misaka's Blog">
+      <meta itemprop="description" content="Beyond the sky,into the firmament">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="龙与月之魔女 | Misaka's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          龙与月之魔女
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2026-02-28 00:00:00 / Modified: 23:39:28" itemprop="dateCreated datePublished" datetime="2026-02-28T00:00:00+08:00">2026-02-28</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>尝试用ai辅助写的小说，不定期连载中……</p>
 <span id="more"></span>
 <h1 id="龙与月之魔女"><a href="#龙与月之魔女" class="headerlink" title="龙与月之魔女"></a>龙与月之魔女</h1><h2 id="序章-龙与月之魔女"><a href="#序章-龙与月之魔女" class="headerlink" title="序章 龙与月之魔女"></a>序章 龙与月之魔女</h2><p>陨星元年。</p>
 <p>暮色如血，残阳半坠于西山之巅，将云絮染成深浅不一的绛紫与锈红。阿斯塔村的炊烟袅袅升起，空气中弥漫着烤麦饼和炖菜的暖香。女人们呼唤孩童归家，男人们扛着锄头从田埂上走来，脚步疲惫却踏实。这是一个被时光遗忘的角落，坐落在群山的褶皱里，连地图上也难觅其踪。人们相信，这样的偏僻便是永恒的护佑。</p>
@@ -350,9 +500,111 @@
 <p>其下记载着一种令人不安的推测：月之魔女或许曾试图将这种独特的力量通过契约或仪式转化为一种血传魔法，以期其力量能通过血脉延续。但似乎失败了，或付出了巨大代价。记载模糊地提到，星辰之力过于浩瀚缥缈，凡俗血脉难以承载其重，终致反噬，疑似造成血脉断绝，或于其后裔灵魂中埋下星陨之契。</p>
 <p>伊莱娜的手指无意识地收紧，指尖按压着那冰冷古老的书页。她意识到，这个偶然被她发现的女孩，其身上隐藏的秘密，其牵扯的因果，可能远远超乎她最初的想象。这不仅仅是一种罕见的魔法天赋，更可能是一把钥匙，关联着一段被遗忘的历史、一个失落已久的强大传承，以及一个可能极其危险的未知契约。</p>
 <p>她轻轻合上古籍，幽深的目光投向阅读台旁冰冷的石壁，仿佛能穿透时空，看到两百年前的星光，以及那位消失在历史迷雾中的月之魔女。</p>
-]]></content>
-      <tags>
-        <tag>小说</tag>
-      </tags>
-  </entry>
-</search>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%B0%8F%E8%AF%B4/" rel="tag"># 小说</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/02/27/%E7%82%B9%E7%BE%A4%E4%B8%8E%E7%A9%BA%E9%97%B4%E7%BE%A4/" rel="prev" title="点群与空间群">
+                  <i class="fa fa-angle-left"></i> 点群与空间群
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">T_Maxwell</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+<script>
+/* 背景图自动轮换脚本（带初始背景+调试） */
+document.addEventListener('DOMContentLoaded', function() {
+  // ================== 你的配置（确认图片名和路径！） ==================
+  const bgImages = [
+    '/images/bg1.jpg',  // 必须和source/images里的图片名完全一致
+    '/images/bg2.jpg',
+    '/images/bg3.jpg'
+  ];
+  const rotateInterval = 5000;  // 5秒轮换一次
+  const fadeDuration = 1000;     // 1秒淡入淡出
+  // ===================================================================
+
+  let currentIndex = 0;
+  const body = document.body;
+
+  // 1. 初始化：先设置第一张背景图（关键！原来的脚本少了这步）
+  body.style.backgroundImage = `url(${bgImages[0]})`;
+  // 2. 设置过渡样式
+  body.style.transition = `background-image ${fadeDuration}ms ease-in-out`;
+  body.style.backgroundSize = 'cover';
+  body.style.backgroundPosition = 'center center';
+  body.style.backgroundAttachment = 'fixed';
+  body.style.backgroundRepeat = 'no-repeat';
+
+  // 3. 切换背景图函数（加调试日志，方便看是否执行）
+  function rotateBackground() {
+    currentIndex = (currentIndex + 1) % bgImages.length;
+    body.style.backgroundImage = `url(${bgImages[currentIndex]})`;
+    // 调试日志：按F12看Console，能看到切换的图片名
+    console.log('切换背景图：', bgImages[currentIndex]);
+  }
+
+  // 4. 启动自动轮换
+  setInterval(rotateBackground, rotateInterval);
+  // 调试日志：确认脚本启动了
+  console.log('背景轮换脚本已启动，图片列表：', bgImages);
+});
+</script>
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
