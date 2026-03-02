@@ -283,4 +283,225 @@ collinear magnets dictated by spin space groups. Nature 640, 349–354
         <tag>点群</tag>
       </tags>
   </entry>
+  <entry>
+    <title>《手性钙钛矿及其在自旋发光二极管中的应用》论文阅读Day2</title>
+    <url>/2026/03/02/%E3%80%8A%E6%89%8B%E6%80%A7%E9%92%99%E9%92%9B%E7%9F%BF%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%87%AA%E6%97%8B%E5%8F%91%E5%85%89%E4%BA%8C%E6%9E%81%E7%AE%A1%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%8B%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBday1%20-%20%E5%89%AF%E6%9C%AC/</url>
+    <content><![CDATA[<h3 id="提要">提要</h3>
+<p>本文是2025
+年《发光学报》领域内系统性综述，完整梳理了手性钙钛矿的手性来源、CISS
+效应机理、室温自旋发光二极管（spin-LEDs）的研究进展，为相关研究提供全面参考。</p>
+<p>手性材料本征特性：空间反演对称性破缺，具备圆二色性（CD）、圆偏振发光（CPL）。</p>
+<p>金属卤化物钙钛矿（MHPs）的固有局限：中心对称化学结构无本征手性，无法直接应用于手性光电领域。</p>
+<p>手性钙钛矿的核心价值：结合钙钛矿优异光电特性 + 手性诱导的 CISS
+效应，实现室温、无外磁场下的自旋极化载流子注入，是 spin-LEDs
+的核心候选材料。</p>
+<h3 id="关键词">关键词</h3>
+<p>手性钙钛矿、自旋发光二极管（spin-LEDs）、<span
+style="color: red;">手性诱导自旋选择（CISS）效应</span>、自旋轨道耦合（SOC）、圆偏振电致发光（CP-EL）</p>
+<p>在每天的阅读中，计划针对这些关键词展开学习。标红的为当天学习内容。</p>
+<span id="more"></span>
+<p>CISS（Chiral Induced Spin
+Selectivity，手性诱导自旋选择效应）是这篇综述的核心逻辑枢纽。</p>
+<p>它上接手性钙钛矿的 SOC
+效应，是手性结构→自旋能级分裂→自旋极化的核心桥梁；</p>
+<p>它下接 spin-LEDs
+的器件实现，是手性钙钛矿突破传统自旋器件「低温、强外磁场依赖」瓶颈的根源，实现了室温、无外加磁场下的自旋极化载流子注入；</p>
+<p>论文明确指出：CISS 效应本质上是一种 SOC，其强弱与材料本征 SOC
+强度直接相关</p>
+<h3 id="ciss-效应的基础定义与物理起源">CISS
+效应的基础定义与物理起源</h3>
+<h4 id="定义">定义</h4>
+<p>CISS 效应是指：在具有手性的分子 /
+材料体系中，电子的输运过程具有自旋选择性 ——
+特定自旋取向的电子可以高效通过手性体系，相反自旋取向的电子则被显著抑制，最终在无外磁场、室温条件下产生净的自旋极化载流子。</p>
+<p>该效应由 Naaman 等人在 2011
+年首次系统性提出，论文中明确其核心前提是材料的手性（空间反演对称性破缺），没有手性的体系无法产生
+CISS 效应。</p>
+<p>电子在沿手性体系（如手性分子螺旋结构、手性钙钛矿的螺旋畸变晶格）输运时，会经历手性结构产生的螺旋形静电势
+<span
+class="math inline">\(E_{chiral}\)</span>​。根据狭义相对论的电磁场洛伦兹变换，在电子自身的静止参考系中，这个运动的螺旋静电势会等效产生一个手性磁场
+<span class="math inline">\(B_{chiral}\)</span>​。</p>
+<p><span class="math display">\[\boldsymbol{B}_{chiral} =
+\frac{\boldsymbol{v}}{c^2} × \boldsymbol{E}_{chiral}\]</span></p>
+<p>这个手性磁场会与电子的固有自旋磁矩发生耦合，让不同自旋取向的电子产生显著的能级差：与手性磁场方向匹配的自旋电子能垒更低，可高效输运；不匹配的自旋电子能垒更高，被抑制输运，最终实现自旋的定向筛选，也就是
+CISS 效应。</p>
+<h4 id="自旋选择性-s">自旋选择性 S</h4>
+<p>该公式用于定量描述手性体系对电子自旋的筛选能力，是 CISS
+效应的本征参数。</p>
+<p><span
+class="math display">\[S=\frac{I_{-}-I_{+}}{I_{-}+I_{+}}\]</span></p>
+<p><span
+class="math inline">\(S∈[−1,1]\)</span>，绝对值越大，自旋选择性越强，理论极限为
+±1（100% 自旋筛选）。</p>
+<h4 id="自旋极化率-p">自旋极化率 P</h4>
+<p>这是实验中最常用的 CISS 效应量化参数，论文中所有钙钛矿体系的 CISS
+效应强度均用该参数表征，也是衡量自旋注入效率的核心指标。</p>
+<p><span
+class="math display">\[P=\frac{I_{up}-I_{down}}{I_{up}+I_{down}} × 100
+\%\]</span></p>
+<p><span
+class="math inline">\(I_{up}\)</span>​：外加电压下，磁导探针磁化方向向上时，测得的通过手性材料的电流；</p>
+<p><span
+class="math inline">\(I_{down}\)</span>​：磁导探针磁化方向向下时，测得的通过手性材料的电流；</p>
+<p>物理意义：直接表征手性材料产生的自旋极化电流的比例，P 值越高，CISS
+效应越强，spin-LEDs 的自旋注入效率越高。</p>
+<p>2019 年 Lu 等人首次在钙钛矿体系中观察到 CISS 效应，室温下测得
+(R/S-MBA)₂PbI₄薄膜的 P 值高达86%；</p>
+<p>后续该团队在 Sn 基手性钙钛矿 (R/S-MBA)₂SnI₄中，测得室温 P
+值高达94%，接近 100% 的理论极限（对应论文图
+7），证明了手性钙钛矿具有极强的 CISS 效应。</p>
+<h4
+id="器件性能核心指标圆偏振发光参数">器件性能核心指标：圆偏振发光参数</h4>
+<p>CISS 效应最终在 spin-LEDs
+中，通过圆偏振电致发光（CP-EL）体现，论文用两个核心参数量化器件性能，均直接由
+CISS 效应的自旋极化率决定。</p>
+<p>有发光不对称因子 <span class="math inline">\(g\)</span></p>
+<p><span class="math display">\[g=2 ×
+\frac{I_{L}-I_{R}}{I_{L}+I_{R}}\]</span></p>
+<p><span
+class="math inline">\(I_L\)</span>​：器件发射的左旋圆偏振光强度； <span
+class="math inline">\(I_R\)</span>：器件发射的右旋圆偏振光强度；
+关键说明：<span class="math inline">\(g_{lum}\)</span>​
+为光致发光不对称因子，<span class="math inline">\(g_{CP−EL}\)</span>​
+为电致发光不对称因子，是衡量 spin-LEDs
+圆偏振性能的核心指标，绝对值越大，器件性能越好。</p>
+<h4 id="ciss-与-soc-的本质关联">CISS 与 SOC 的本质关联</h4>
+<p>CISS
+效应的本质，是手性体系中一种特殊的自旋轨道耦合效应，二者不是相互独立的物理现象，而是根源与表现的关系。</p>
+<p>论文中重点强调，手性钙钛矿是目前实现 CISS 效应、构建室温 spin-LEDs
+的理想材料。</p>
+<h3 id="ciss-效应在-spin-leds-中的核心应用逻辑">CISS 效应在 spin-LEDs
+中的核心应用逻辑</h3>
+<p>CISS 效应是所有手性钙钛矿 spin-LEDs 的工作核心，论文中总结了 4
+种器件实现路径，均围绕 CISS 效应的最大化利用展开。</p>
+<p>传统 spin-LEDs 依赖铁磁电极 +
+低温强磁场实现自旋极化载流子注入，而基于 CISS 效应的
+spin-LEDs，完全依靠手性钙钛矿的本征特性：</p>
+<p>手性钙钛矿层通过 CISS
+效应，将电注入的非极化载流子筛选为自旋极化载流子；</p>
+<p>自旋极化的电子与空穴在发光层中辐射复合，发射出与自旋取向对应的圆偏振光；</p>
+<p>整个过程在室温、无外加磁场、无铁磁电极的条件下完成，极大简化了器件结构，拓展了应用场景。</p>
+<h4
+id="手性钙钛矿4种核心器件结构与ciss效应作用对照表">手性钙钛矿4种核心器件结构与CISS效应作用对照表</h4>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">核心器件结构类型</th>
+<th style="text-align: left;">CISS效应的核心作用机制</th>
+<th style="text-align: left;">器件核心优势</th>
+<th style="text-align: left;">论文中代表性性能指标</th>
+<th style="text-align: left;">论文对应关键说明与文献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td
+style="text-align: left;"><strong>异质结结构<br>（手性注入层+非手性发光层）</strong></td>
+<td style="text-align: left;">1.
+二维手性钙钛矿层作为独立的自旋极化注入层，通过CISS效应对电注入的载流子进行自旋筛选，输出净自旋极化载流子；<br>2.
+自旋极化载流子被注入到相邻的非手性发光层中，与相反极性的非极化载流子形成自旋极化激子，最终辐射复合产生CP-EL；<br>3.
+手性层的CISS效应强弱直接决定器件的自旋注入效率上限。</td>
+<td style="text-align: left;">1.
+自旋极化功能与高效发光功能完全解耦，可分别优化手性注入层的CISS效应和发光层的光电性能；<br>2.
+器件结构设计灵活，可兼容钙钛矿纳米晶、传统量子点、Ⅲ-Ⅴ族多量子阱等多种发光体系。</td>
+<td style="text-align: left;">1. 最高电致发光不对称因子 <span
+class="math inline">\(g_{CP-EL}\)</span> 达 <span
+class="math inline">\(\boldsymbol{3.8×10^{-1}}\)</span>；<br>2.
+最高外量子效率 <span class="math inline">\(\text{EQE}\)</span> 达 <span
+class="math inline">\(\boldsymbol{10.53\%}\)</span>；<br>3.
+首次实现室温、无外磁场、无铁磁电极的钙钛矿spin-LEDs。</td>
+<td style="text-align: left;">1.
+2021年Beard团队里程碑工作，首次验证该结构可行性，对应论文文献[8]；<br>2.
+手性钙钛矿/Ⅲ-Ⅴ族化合物界面器件，对应论文文献[38]；<br>3.
+手性钙钛矿/CdSe/ZnS量子点器件，对应论文文献[39]。</td>
+</tr>
+<tr>
+<td
+style="text-align: left;"><strong>核壳纳米晶结构<br>（手性低维钙钛矿壳层+非手性钙钛矿核）</strong></td>
+<td style="text-align: left;">1.
+手性低维钙钛矿壳层通过CISS效应，对注入的载流子进行自旋筛选，在核壳界面处产生自旋极化载流子；<br>2.
+手性壳层同时起到<strong>自旋保护作用</strong>，抑制载流子在输运过程中的自旋弛豫与翻转，延长自旋寿命；<br>3.
+自旋极化载流子在非手性钙钛矿核内发生辐射复合，直接产生CP-EL。</td>
+<td style="text-align: left;">1.
+单组分纳米晶同时实现自旋极化与高效发光，无需构建多层异质结，极大简化器件制备工艺；<br>2.
+量子限域效应显著，可有效抑制自旋翻转；<br>3.
+溶液可加工性强，可通过喷墨打印等方式制备图案化器件，适配防伪等场景。</td>
+<td style="text-align: left;">1. 最高 <span
+class="math inline">\(g_{CP-EL}\)</span> 达 <span
+class="math inline">\(\boldsymbol{2.4×10^{-1}}\)</span>；<br>2. 最高
+<span class="math inline">\(\text{EQE}\)</span> 达 <span
+class="math inline">\(\boldsymbol{5.47\%}\)</span>；<br>3.
+室温下稳定工作，无外磁场依赖。</td>
+<td style="text-align: left;">1.
+Ye等首次提出该结构，对应论文文献[43]；<br>2.
+Jang等优化R/S-NEA手性配体，实现性能突破，对应论文文献[44]。</td>
+</tr>
+<tr>
+<td
+style="text-align: left;"><strong>准二维（quasi-2D）多相结构<br>（单发光层体系）</strong></td>
+<td style="text-align: left;">1.
+手性低n相（n=1）通过CISS效应产生自旋极化激子，是器件的自旋极化源；<br>2.
+利用准二维钙钛矿的<strong>多量子阱能量漏斗效应</strong>，在亚皮秒级（~0.2
+ps）内将自旋极化激子的能量和自旋同步传递到高n相/3D体相发光中心；<br>3.
+非手性中间相（n=2）可作为自旋传递桥梁，进一步增强CISS效应，减少自旋传递过程中的损耗；<br>4.
+自旋极化激子在体相发光中心完成辐射复合，产生高亮度、高圆偏振度的CP-EL。</td>
+<td style="text-align: left;">1.
+单薄膜实现自旋调控与发光，器件结构最简，制备工艺兼容性强；<br>2.
+可通过配体工程精准调控相分布，兼顾高发光效率与高圆偏振度；<br>3.
+可实现从深蓝光、绿光、红光到近红外的全波段CP-EL，适配全彩显示等场景。</td>
+<td style="text-align: left;">1. 最高 <span
+class="math inline">\(\text{EQE}\)</span> 达 <span
+class="math inline">\(\boldsymbol{15.42\%}\)</span>，为论文汇总的最高效率；<br>2.
+深蓝光器件最高 <span class="math inline">\(g_{CP-EL}\)</span> 达 <span
+class="math inline">\(\boldsymbol{1.75×10^{-1}}\)</span>；<br>3.
+绿光器件最高 <span class="math inline">\(g_{CP-EL}\)</span> 达 <span
+class="math inline">\(\boldsymbol{1.03×10^{-1}}\)</span>，<span
+class="math inline">\(\text{EQE}\)</span> 达13.5%；<br>4. 实现689~782
+nm近红外波段CP-EL。</td>
+<td style="text-align: left;">1.
+Yang等首次报道单层准二维手性钙钛矿spin-LEDs，对应论文文献[46]；<br>2.
+Xiao团队实现绿光、蓝光、深蓝光全波段覆盖，对应论文文献[47][48][49]；<br>3.
+Yao团队实现高效绿光、近红外器件，对应论文文献[50][51]；<br>4.
+Li等、Tang团队实现效率突破，对应论文文献[36][52][53]。</td>
+</tr>
+<tr>
+<td
+style="text-align: left;"><strong>非核壳手性钙钛矿纳米晶/量子点结构</strong></td>
+<td style="text-align: left;">1.
+通过原位配体修饰、配体交换等方式，将手性配体锚定在钙钛矿纳米晶表面；<br>2.
+手性配体通过强配位作用诱导纳米晶晶格发生手性畸变，通过CISS效应直接在纳米晶内产生本征自旋极化激子；<br>3.
+量子限域效应显著抑制激子的自旋弛豫，确保自旋极化激子在翻转前完成原位辐射复合，直接产生CP-EL；<br>4.
+手性配体同时起到缺陷钝化作用，提升纳米晶的发光效率与自旋寿命。</td>
+<td style="text-align: left;">1.
+纳米晶比表面积大，可锚定足量手性配体，最大化CISS效应的自旋筛选能力；<br>2.
+溶液加工性优异，适配旋涂、印刷等大面积器件制备工艺；<br>3.
+可通过卤素调控实现全可见光波段发光，适配多种光电器件场景。</td>
+<td style="text-align: left;">1. 最高 <span
+class="math inline">\(g_{CP-EL}\)</span> 达 <span
+class="math inline">\(\boldsymbol{2.85×10^{-1}}\)</span>，为论文汇总的最高圆偏振度；<br>2.
+最高 <span class="math inline">\(\text{EQE}\)</span> 达 <span
+class="math inline">\(\boldsymbol{16.8\%}\)</span>，同时实现最高亮度超
+<span class="math inline">\(\boldsymbol{28000\
+cd·m^{-2}}\)</span>；<br>3. 实现465 nm蓝光到660 nm红光全波段覆盖。</td>
+<td style="text-align: left;">1.
+He等通过超声辅助配体交换策略实现创纪录性能，对应论文文献[57]；<br>2.
+Yang等通过原位手性配体钝化实现高性能器件，对应论文文献[55]；<br>3.
+Chen等、Li等拓展了该体系的材料设计，对应论文文献[56][58]。</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <tags>
+        <tag>论文阅读</tag>
+        <tag>钙钛矿</tag>
+        <tag>化学</tag>
+      </tags>
+  </entry>
 </search>
