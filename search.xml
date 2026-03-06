@@ -337,268 +337,6 @@ class="math inline">\(g_{CP−EL}\)</span>​与 EQE 的同步突破。</p>
       </tags>
   </entry>
   <entry>
-    <title>【结构化学2】第一次作业</title>
-    <url>/2026/03/06/%E3%80%90%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A62%E3%80%91%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/</url>
-    <content><![CDATA[<h1 id="第一周作业">第一周作业</h1>
-<span id="more"></span>
-<h2 id="题目">题目</h2>
-<ol type="1">
-<li><p>请在可见，红外，微波和射频各选择一个合适单位的单色电磁波，计算对应的波长（nm或μm），波数（<span
-class="math inline">\(\mathrm{cm^{-1}}\)</span>），频率（<span
-class="math inline">\(\mathrm{Hz}\)</span>），能量（<span
-class="math inline">\(\mathrm{eV}\)</span>和J）。</p></li>
-<li><p>把6000K的太阳，300K的地球和2.7K的宇宙分别作为一个黑体。
-1）画出谱能量密度的频率分布图
-2）找到最大辐射对应的频率以及该频率对应的波长、能量密度和电场强度。</p></li>
-<li><p>考虑一束功率4W输出的均匀圆形激光打在一个电子能级近似两能级的原子体系，光斑直径为1mm，原子体系的跃迁偶极大小为1
-Debye (1 D = 3.34×10⁻³⁰ C·m)。 1）请计算电场强度和拉比振荡频率。
-2）实验室常用的能观察到振幅略有衰减但周期性清晰的拉比振荡的判据是：拉比振荡频率≥5倍的退相干速率。原子体系电子激发态弛豫的寿命通常是10ns左右，请问上述条件下能看到原子的拉比振荡吗？
-3）如果激光功率降低到4mW，还能看到拉比振荡吗？</p></li>
-<li><p>核自旋的退相干很慢，已知某
-NMR两能级体系的退相干时间为1ms，跃迁偶极矩大小为1.5D</p>
-<ol type="1">
-<li>计算该体系的退相干速率<span
-class="math inline">\(\Gamma\)</span>；</li>
-<li>按照以上判据，求能观察到拉比振荡的最小拉比频率；</li>
-<li>计算满足该拉比频率所需的最小光场电场强度<span
-class="math inline">\(E_0\)</span>；</li>
-<li>由于黑体辐射产生的是多频域宽谱，即使上面那么大的电场强度通过黑体辐射产生也不现实，实际核磁设备中都是通过射频线圈产生定向、单色的强射频场。请以600MHz核磁跃迁频率为例，计算如上对应的电场强度如果通过黑体辐射来产生，需要把黑体加热到多少度。</li>
-</ol></li>
-</ol>
-<hr />
-<h2 id="基本物理常数取值">基本物理常数取值</h2>
-<table style="width:100%;">
-<colgroup>
-<col style="width: 30%" />
-<col style="width: 23%" />
-<col style="width: 23%" />
-<col style="width: 23%" />
-</colgroup>
-<thead>
-<tr>
-<th>物理量</th>
-<th>符号</th>
-<th>取值</th>
-<th>单位</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>真空中光速</td>
-<td><span class="math inline">\(c\)</span></td>
-<td><span class="math inline">\(3.0\times10^8\)</span></td>
-<td><span class="math inline">\(\text{m/s}\)</span></td>
-</tr>
-<tr>
-<td>普朗克常数</td>
-<td><span class="math inline">\(h\)</span></td>
-<td><span class="math inline">\(6.626\times10^{-34}\)</span></td>
-<td><span class="math inline">\(\text{Js}\)</span></td>
-</tr>
-<tr>
-<td>约化普朗克常数</td>
-<td><span class="math inline">\(\hbar\)</span></td>
-<td><span class="math inline">\(1.0546\times10^{-34}\)</span></td>
-<td><span class="math inline">\(\text{Js}\)</span></td>
-</tr>
-<tr>
-<td>元电荷</td>
-<td><span class="math inline">\(e\)</span></td>
-<td><span class="math inline">\(1.602\times10^{-19}\)</span></td>
-<td><span class="math inline">\(\text{C}\)</span></td>
-</tr>
-<tr>
-<td>玻尔兹曼常数</td>
-<td><span class="math inline">\(k_B\)</span></td>
-<td><span class="math inline">\(1.3806\times10^{-23}\)</span></td>
-<td><span class="math inline">\(\text{J/K}\)</span></td>
-</tr>
-<tr>
-<td>真空介电常数</td>
-<td><span class="math inline">\(\varepsilon_0\)</span></td>
-<td><span class="math inline">\(8.854\times10^{-12}\)</span></td>
-<td><span class="math inline">\(\text{F/m}\)</span></td>
-</tr>
-<tr>
-<td>德拜单位转换</td>
-<td><span class="math inline">\(1\ \text{D}\)</span></td>
-<td><span class="math inline">\(3.34\times10^{-30}\)</span></td>
-<td><span class="math inline">\(\text{Cm}\)</span></td>
-</tr>
-<tr>
-<td>频率域维恩位移常数</td>
-<td><span class="math inline">\(\alpha\)</span></td>
-<td><span class="math inline">\(5.8789\times10^{10}\)</span></td>
-<td><span class="math inline">\(\text{Hz/K}\)</span></td>
-</tr>
-<tr>
-<td>波长域维恩位移常数</td>
-<td><span class="math inline">\(b\)</span></td>
-<td><span class="math inline">\(2.898\times10^{-3}\)</span></td>
-<td><span class="math inline">\(\text{mK}\)</span></td>
-</tr>
-</tbody>
-</table>
-<p>谱能量密度频率分布图 #### 绘图Python代码 ```python import numpy as np
-import matplotlib.pyplot as plt</p>
-<h1 id="基本常数">基本常数</h1>
-<p>h = 6.626e-34 c = 3e8 kb = 1.3806e-23</p>
-<h1 id="普朗克公式定义">普朗克公式定义</h1>
-<p>def planck_rho(nu, T): numerator = 8 * np.pi * h * (nu ** 3) / (c **
-3) exponent = h * nu / (kb * T) denominator = np.exp(exponent) - 1
-denominator[denominator == 0] = 1e-20 # 避免除零 return numerator /
-denominator</p>
-<h1 id="黑体温度设置">黑体温度设置</h1>
-<p>T_sun = 6000 # 太阳 T_earth = 300 # 地球 T_cmb = 2.7 #
-宇宙微波背景</p>
-<h1 id="频率范围100mhz-10phz覆盖三个黑体的峰值">频率范围：100MHz ~
-10PHz，覆盖三个黑体的峰值</h1>
-<p>nu = np.logspace(8, 16, 1000)</p>
-<h1 id="计算各温度的谱能量密度">计算各温度的谱能量密度</h1>
-<p>rho_sun = planck_rho(nu, T_sun) rho_earth = planck_rho(nu, T_earth)
-rho_cmb = planck_rho(nu, T_cmb)</p>
-<h1 id="绘图">绘图</h1>
-<p>plt.figure(figsize=(10,6)) plt.loglog(nu, rho_sun, label=‘6000K
-太阳’, color=‘orange’, linewidth=2) plt.loglog(nu, rho_earth,
-label=‘300K 地球’, color=‘blue’, linewidth=2) plt.loglog(nu, rho_cmb,
-label=‘2.7K 宇宙背景’, color=‘black’, linewidth=2)</p>
-<h1 id="标注峰值位置">标注峰值位置</h1>
-<p>nu_max_sun = 5.8789e10 * T_sun nu_max_earth = 5.8789e10 * T_earth
-nu_max_cmb = 5.8789e10 * T_cmb plt.axvline(nu_max_sun, color=‘orange’,
-linestyle=‘–’, alpha=0.7) plt.axvline(nu_max_earth, color=‘blue’,
-linestyle=‘–’, alpha=0.7) plt.axvline(nu_max_cmb, color=‘black’,
-linestyle=‘–’, alpha=0.7)</p>
-<p>plt.xlabel(‘频率 ν (Hz)’, fontsize=12) plt.ylabel(‘谱能量密度 ρ(ν,T)
-(J·m⁻³·Hz⁻¹)’, fontsize=12) plt.title(‘黑体谱能量密度频率分布图’,
-fontsize=14) plt.legend(fontsize=12) plt.grid(True, which=“both”,
-ls=“–”, alpha=0.5) plt.xlim(1e8, 1e16) plt.show()</p>
-]]></content>
-      <tags>
-        <tag>化学</tag>
-        <tag>课程作业</tag>
-        <tag>结构化学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>点群与空间群</title>
-    <url>/2026/02/27/%E7%82%B9%E7%BE%A4%E4%B8%8E%E7%A9%BA%E9%97%B4%E7%BE%A4/</url>
-    <content><![CDATA[<h1
-id="点群与空间群对称性理论的基础与前沿发展">点群与空间群：对称性理论的基础与前沿发展</h1>
-<h2 id="摘要">摘要</h2>
-<p>点群和空间群是描述晶体对称性的核心数学工具，分别表征宏观几何对称性与微观平移对称性的组合。本文系统梳理了晶体学中32种点群与230种空间群的分类规则及其物理意义，结合群论与实验技术揭示了其在材料物性预测中的关键作用。近年来，随着磁性材料和量子拓扑物态研究的深入，传统空间群理论已拓展至自旋空间群领域，通过分离晶格与自旋自由度，揭示了磁有序材料中超越传统磁群的新奇物理效应。本文还总结了自旋空间群的枚举方法、表示理论及其在反常霍尔效应、自旋劈裂等领域的应用，并展望了其在量子计算与拓扑材料设计中的潜力。</p>
-<p>​关键词​：点群；空间群；自旋空间群；对称性破缺；磁性材料</p>
-<span id="more"></span>
-<h2 id="基础概念与理论框架">1：基础概念与理论框架</h2>
-<h3 id="点群">1.1：点群</h3>
-<p>点群定义为保持晶体中至少一点固定的对称操作集合，是描述晶体或分子对称性的数学工具。</p>
-<p>其中对称操作有旋转，反演，反映，这些操作都满足正交变换。点群仅描述方向对称性，不涉及平移操作。在晶体学中，由于周期性限制，可以证明旋转轴仅允许1、2、3、4、6次（排除5次轴）。在三维晶体中存在32种点群，根据对称元素组合分为7大晶系。</p>
-<p>同时，由于晶体按周期性排列，我们可以更加直观地用晶格的几何形状进行分类，得到7大晶系。</p>
-<p>点群通过对称元素的组合（如旋转轴与镜面）决定晶体的宏观性质（如分子极性、光谱活性），是分析材料物理化学性质的基础。</p>
-<h3 id="空间群">1.2：空间群</h3>
-<p>空间群是点群与平移操作的结合，描述晶体微观对称性​，即原子排列的周期性对称，共230种，由俄国学者费多洛夫与德国学者薛弗利斯于1891年独立提出。
-空间群分为​点式空间群​（73种）和​非点式空间群​（157种）。​点式空间群仅含点对称操作（旋转、反射）与晶格平移，如简单立方晶系的Pm3m。​非点式空间群引入微观对称元素​，如螺旋轴​（如4₁轴），旋转后沿轴平移分数周期（如1/4晶胞长度）和滑移面​（如a、n、d型）：反射后沿特定方向滑移（如沿晶轴平移1/2周期）。</p>
-<p>​数学形式​上，空间群可表示为平移群（T）与点群（P）的半直积​：S=T⋊P，反映点群操作对平移向量的作用。在​国际符号​表示上，空间群符号由
-​格子类型（Lattice Type）​​ 和 ​对称元素方向（Symmetry Elements）​​
-构成，形式为 ​LS₁S₂S₃。例如，空间群P4₂/ncm表示： ​P​：简单四方格子；
-​4₂​：4次螺旋轴（旋转90°后平移1/2周期）； ​n​：对角线滑移面；
-​c​：轴向滑移面。</p>
-<h2 id="前沿研究自旋空间群的突破">2：前沿研究——自旋空间群的突破</h2>
-<h3 id="自旋空间群的研究与发展">2.1：自旋空间群的研究与发展</h3>
-<p>在20世纪上半叶，科学家们开始意识到除了几何对称性外，磁性材料还表现出了额外的对称性。这些对称性与材料内部的原子或离子内禀的自旋自由度有关。20世纪中叶，晶体学家Alexei
-V.
-Shubnikov等人将使自旋翻转的反对称操作引入空间群，用于磁性材料的对称性分析，并提出了磁性点群和磁性空间群。</p>
-<p>随着对磁性材料更深入的研究，人们逐渐意识到需要一个更加全面的群来完全表征磁有序材料的几何形状和物理性质。这源于自旋磁矩作为材料的内秉自由度，除了翻转属性外还具有可旋转的轴矢量属性。因此，自旋空间的对称操作在不考虑与晶格耦合的情况下，可以独立于晶格对称操作而存在。一个典型的例子是晶体中的顺磁——铁磁相变对应的是自旋SU(2)旋转对称性的破缺。而在磁群中，自旋和晶格的转动是严格锁定在一起的。如果要完整描述磁有序材料的构型，需要将晶格和自旋空间的对称操作分开考虑（如图1），从而构成一个更庞大的群——自旋群，包括自旋点群和自旋空间群。</p>
-<p>目前已发现1421种共线自旋群与超10万种非共线自旋空间群，涵盖立方、六方等晶系。</p>
-<h3 id="自旋空间群的枚举">2.2：自旋空间群的枚举</h3>
-<p>自旋空间群是描述磁性材料中晶格与自旋自由度独立或耦合对称性的数学框架，其核心在于将传统磁空间群扩展至包含自旋空间的连续旋转对称性。</p>
-<p>相比于自旋点群，自旋空间群由于允许任意的平移扩胞，导致自旋空间不再只允许2、3、4和6重转动，因此理论上也存在无穷多个自旋空间群。从230个晶体空间群和最大阶数为8的有限平移群出发(即允许磁结构导致的8倍扩胞)，遍历了所有晶体空间群的不等价的正规子群，并通过不等价的同构关系可以建立它们与自旋空间中描述自旋分布的点群的映射。</p>
-<table>
-<thead>
-<tr>
-<th>晶系</th>
-<th style="text-align: right;">共线</th>
-<th style="text-align: right;">非共线</th>
-<th style="text-align: right;">总数</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>三斜(2)</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">55</td>
-<td style="text-align: right;">60</td>
-</tr>
-<tr>
-<td>单斜(13)</td>
-<td style="text-align: right;">78</td>
-<td style="text-align: right;">3540</td>
-<td style="text-align: right;">3618</td>
-</tr>
-<tr>
-<td>正交(59)</td>
-<td style="text-align: right;">503</td>
-<td style="text-align: right;">53734</td>
-<td style="text-align: right;">54237</td>
-</tr>
-<tr>
-<td>四方(68)</td>
-<td style="text-align: right;">502</td>
-<td style="text-align: right;">31185</td>
-<td style="text-align: right;">31687</td>
-</tr>
-<tr>
-<td>三方(25)</td>
-<td style="text-align: right;">83</td>
-<td style="text-align: right;">2393</td>
-<td style="text-align: right;">2476</td>
-</tr>
-<tr>
-<td>六方(27)</td>
-<td style="text-align: right;">137</td>
-<td style="text-align: right;">7260</td>
-<td style="text-align: right;">7397</td>
-</tr>
-<tr>
-<td>立方(36)</td>
-<td style="text-align: right;">113</td>
-<td style="text-align: right;">1024</td>
-<td style="text-align: right;">1137</td>
-</tr>
-<tr>
-<td>​<strong>总数(230)​</strong>​</td>
-<td style="text-align: right;">1421</td>
-<td style="text-align: right;">99191</td>
-<td style="text-align: right;">100612</td>
-</tr>
-</tbody>
-</table>
-<h3 id="自旋空间群的物理效应">2.3：自旋空间群的物理效应</h3>
-<p>​1.
-自旋劈裂：共面反铁磁体CeAuAl₃的螺旋序诱导动量依赖自旋极化​在共面反铁磁体CeAuAl₃中，螺旋磁序通过破坏时间-空间反演对称性（如自旋翻转-平移操作的缺失），诱导了动量依赖的自旋极化。</p>
-<p>​2.
-几何霍尔效应：非共面反铁磁体CoNb₃S₆的无自旋轨道耦合霍尔电导​在非共面反铁磁体CoNb₃S₆中，自旋空间群的对称性允许实空间磁矩的几何构型直接诱导霍尔效应，无需依赖自旋轨道耦合。</p>
-<p>​3.
-自旋群保护的Z₂拓扑相：交错磁体中的预言与观测​自旋空间群理论揭示了交错磁体中受Z₂拓扑保护的物态。</p>
-<h1 id="发展前景与挑战">3. 发展前景与挑战</h1>
-<p>自旋空间群理论为材料设计提供了新的对称性框架，对量子几何效应调控与新型功能材料的研发，​尤其在调控量子几何效应（如贝里曲率、量子度规）方面具有突破性意义。
-自旋空间群的不可约表示理论是解析材料电子和磁振子能带的关键工具。</p>
-<h2 id="参考文献">参考文献</h2>
-<p>[1] Bradley C J，Cracknell A P. The Mathematical Theory of Symmetry
-in Solids：Representation Theory for Point Groups and Space Groups.
-Oxford University Press，New York，1972</p>
-<p>[2] Belov N V，Neronova N N，Smirnova T S. Sov. Phys.
-Crystallogr.，1957，2：311</p>
-<p>[3] Chen, X., Liu, Y., Liu, P. et al. Unconventional magnons in
-collinear magnets dictated by spin space groups. Nature 640, 349–354
-(2025)</p>
-]]></content>
-      <tags>
-        <tag>化学</tag>
-        <tag>晶体学</tag>
-        <tag>点群</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《手性钙钛矿及其在自旋发光二极管中的应用》论文阅读Day1</title>
     <url>/2026/03/01/%E3%80%8A%E6%89%8B%E6%80%A7%E9%92%99%E9%92%9B%E7%9F%BF%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%87%AA%E6%97%8B%E5%8F%91%E5%85%89%E4%BA%8C%E6%9E%81%E7%AE%A1%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%8B%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBday1/</url>
     <content><![CDATA[<h3 id="提要">提要</h3>
@@ -981,6 +719,235 @@ Chen等、Li等拓展了该体系的材料设计，对应论文文献[56][58]。
         <tag>论文阅读</tag>
         <tag>钙钛矿</tag>
         <tag>化学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【结构化学2】作业合集</title>
+    <url>/2026/03/06/%E3%80%90%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A62%E3%80%91%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/</url>
+    <content><![CDATA[<p>打算把结构2所有的作业题都1放在这里，方便期末复习。</p>
+<span id="more"></span>
+<h2 id="第一周作业题目">第一周作业题目</h2>
+<ol type="1">
+<li><p>请在可见，红外，微波和射频各选择一个合适单位的单色电磁波，计算对应的波长（nm或μm），波数（<span
+class="math inline">\(\mathrm{cm^{-1}}\)</span>），频率（<span
+class="math inline">\(\mathrm{Hz}\)</span>），能量（<span
+class="math inline">\(\mathrm{eV}\)</span>和J）。</p></li>
+<li><p>把6000K的太阳，300K的地球和2.7K的宇宙分别作为一个黑体。
+1）画出谱能量密度的频率分布图
+2）找到最大辐射对应的频率以及该频率对应的波长、能量密度和电场强度。</p></li>
+<li><p>考虑一束功率4W输出的均匀圆形激光打在一个电子能级近似两能级的原子体系，光斑直径为1mm，原子体系的跃迁偶极大小为1
+Debye (1 D = 3.34×10⁻³⁰ C·m)。 1）请计算电场强度和拉比振荡频率。
+2）实验室常用的能观察到振幅略有衰减但周期性清晰的拉比振荡的判据是：拉比振荡频率≥5倍的退相干速率。原子体系电子激发态弛豫的寿命通常是10ns左右，请问上述条件下能看到原子的拉比振荡吗？
+3）如果激光功率降低到4mW，还能看到拉比振荡吗？</p></li>
+<li><p>核自旋的退相干很慢，已知某
+NMR两能级体系的退相干时间为1ms，跃迁偶极矩大小为1.5D</p>
+<ol type="1">
+<li>计算该体系的退相干速率<span
+class="math inline">\(\Gamma\)</span>；</li>
+<li>按照以上判据，求能观察到拉比振荡的最小拉比频率；</li>
+<li>计算满足该拉比频率所需的最小光场电场强度<span
+class="math inline">\(E_0\)</span>；</li>
+<li>由于黑体辐射产生的是多频域宽谱，即使上面那么大的电场强度通过黑体辐射产生也不现实，实际核磁设备中都是通过射频线圈产生定向、单色的强射频场。请以600MHz核磁跃迁频率为例，计算如上对应的电场强度如果通过黑体辐射来产生，需要把黑体加热到多少度。</li>
+</ol></li>
+</ol>
+<hr />
+<h2 id="基本物理常数取值">基本物理常数取值</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>物理量</th>
+<th>符号</th>
+<th>取值</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真空中光速</td>
+<td><span class="math inline">\(c\)</span></td>
+<td><span class="math inline">\(3.0\times10^8\)</span></td>
+<td><span class="math inline">\(\text{m/s}\)</span></td>
+</tr>
+<tr>
+<td>普朗克常数</td>
+<td><span class="math inline">\(h\)</span></td>
+<td><span class="math inline">\(6.626\times10^{-34}\)</span></td>
+<td><span class="math inline">\(\text{Js}\)</span></td>
+</tr>
+<tr>
+<td>约化普朗克常数</td>
+<td><span class="math inline">\(\hbar\)</span></td>
+<td><span class="math inline">\(1.0546\times10^{-34}\)</span></td>
+<td><span class="math inline">\(\text{Js}\)</span></td>
+</tr>
+<tr>
+<td>元电荷</td>
+<td><span class="math inline">\(e\)</span></td>
+<td><span class="math inline">\(1.602\times10^{-19}\)</span></td>
+<td><span class="math inline">\(\text{C}\)</span></td>
+</tr>
+<tr>
+<td>玻尔兹曼常数</td>
+<td><span class="math inline">\(k_B\)</span></td>
+<td><span class="math inline">\(1.3806\times10^{-23}\)</span></td>
+<td><span class="math inline">\(\text{J/K}\)</span></td>
+</tr>
+<tr>
+<td>真空介电常数</td>
+<td><span class="math inline">\(\varepsilon_0\)</span></td>
+<td><span class="math inline">\(8.854\times10^{-12}\)</span></td>
+<td><span class="math inline">\(\text{F/m}\)</span></td>
+</tr>
+<tr>
+<td>德拜单位转换</td>
+<td><span class="math inline">\(1\ \text{D}\)</span></td>
+<td><span class="math inline">\(3.34\times10^{-30}\)</span></td>
+<td><span class="math inline">\(\text{Cm}\)</span></td>
+</tr>
+<tr>
+<td>频率域维恩位移常数</td>
+<td><span class="math inline">\(\alpha\)</span></td>
+<td><span class="math inline">\(5.8789\times10^{10}\)</span></td>
+<td><span class="math inline">\(\text{Hz/K}\)</span></td>
+</tr>
+<tr>
+<td>波长域维恩位移常数</td>
+<td><span class="math inline">\(b\)</span></td>
+<td><span class="math inline">\(2.898\times10^{-3}\)</span></td>
+<td><span class="math inline">\(\text{mK}\)</span></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <tags>
+        <tag>化学</tag>
+        <tag>课程作业</tag>
+        <tag>结构化学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>点群与空间群</title>
+    <url>/2026/02/27/%E7%82%B9%E7%BE%A4%E4%B8%8E%E7%A9%BA%E9%97%B4%E7%BE%A4/</url>
+    <content><![CDATA[<h1
+id="点群与空间群对称性理论的基础与前沿发展">点群与空间群：对称性理论的基础与前沿发展</h1>
+<h2 id="摘要">摘要</h2>
+<p>点群和空间群是描述晶体对称性的核心数学工具，分别表征宏观几何对称性与微观平移对称性的组合。本文系统梳理了晶体学中32种点群与230种空间群的分类规则及其物理意义，结合群论与实验技术揭示了其在材料物性预测中的关键作用。近年来，随着磁性材料和量子拓扑物态研究的深入，传统空间群理论已拓展至自旋空间群领域，通过分离晶格与自旋自由度，揭示了磁有序材料中超越传统磁群的新奇物理效应。本文还总结了自旋空间群的枚举方法、表示理论及其在反常霍尔效应、自旋劈裂等领域的应用，并展望了其在量子计算与拓扑材料设计中的潜力。</p>
+<p>​关键词​：点群；空间群；自旋空间群；对称性破缺；磁性材料</p>
+<span id="more"></span>
+<h2 id="基础概念与理论框架">1：基础概念与理论框架</h2>
+<h3 id="点群">1.1：点群</h3>
+<p>点群定义为保持晶体中至少一点固定的对称操作集合，是描述晶体或分子对称性的数学工具。</p>
+<p>其中对称操作有旋转，反演，反映，这些操作都满足正交变换。点群仅描述方向对称性，不涉及平移操作。在晶体学中，由于周期性限制，可以证明旋转轴仅允许1、2、3、4、6次（排除5次轴）。在三维晶体中存在32种点群，根据对称元素组合分为7大晶系。</p>
+<p>同时，由于晶体按周期性排列，我们可以更加直观地用晶格的几何形状进行分类，得到7大晶系。</p>
+<p>点群通过对称元素的组合（如旋转轴与镜面）决定晶体的宏观性质（如分子极性、光谱活性），是分析材料物理化学性质的基础。</p>
+<h3 id="空间群">1.2：空间群</h3>
+<p>空间群是点群与平移操作的结合，描述晶体微观对称性​，即原子排列的周期性对称，共230种，由俄国学者费多洛夫与德国学者薛弗利斯于1891年独立提出。
+空间群分为​点式空间群​（73种）和​非点式空间群​（157种）。​点式空间群仅含点对称操作（旋转、反射）与晶格平移，如简单立方晶系的Pm3m。​非点式空间群引入微观对称元素​，如螺旋轴​（如4₁轴），旋转后沿轴平移分数周期（如1/4晶胞长度）和滑移面​（如a、n、d型）：反射后沿特定方向滑移（如沿晶轴平移1/2周期）。</p>
+<p>​数学形式​上，空间群可表示为平移群（T）与点群（P）的半直积​：S=T⋊P，反映点群操作对平移向量的作用。在​国际符号​表示上，空间群符号由
+​格子类型（Lattice Type）​​ 和 ​对称元素方向（Symmetry Elements）​​
+构成，形式为 ​LS₁S₂S₃。例如，空间群P4₂/ncm表示： ​P​：简单四方格子；
+​4₂​：4次螺旋轴（旋转90°后平移1/2周期）； ​n​：对角线滑移面；
+​c​：轴向滑移面。</p>
+<h2 id="前沿研究自旋空间群的突破">2：前沿研究——自旋空间群的突破</h2>
+<h3 id="自旋空间群的研究与发展">2.1：自旋空间群的研究与发展</h3>
+<p>在20世纪上半叶，科学家们开始意识到除了几何对称性外，磁性材料还表现出了额外的对称性。这些对称性与材料内部的原子或离子内禀的自旋自由度有关。20世纪中叶，晶体学家Alexei
+V.
+Shubnikov等人将使自旋翻转的反对称操作引入空间群，用于磁性材料的对称性分析，并提出了磁性点群和磁性空间群。</p>
+<p>随着对磁性材料更深入的研究，人们逐渐意识到需要一个更加全面的群来完全表征磁有序材料的几何形状和物理性质。这源于自旋磁矩作为材料的内秉自由度，除了翻转属性外还具有可旋转的轴矢量属性。因此，自旋空间的对称操作在不考虑与晶格耦合的情况下，可以独立于晶格对称操作而存在。一个典型的例子是晶体中的顺磁——铁磁相变对应的是自旋SU(2)旋转对称性的破缺。而在磁群中，自旋和晶格的转动是严格锁定在一起的。如果要完整描述磁有序材料的构型，需要将晶格和自旋空间的对称操作分开考虑（如图1），从而构成一个更庞大的群——自旋群，包括自旋点群和自旋空间群。</p>
+<p>目前已发现1421种共线自旋群与超10万种非共线自旋空间群，涵盖立方、六方等晶系。</p>
+<h3 id="自旋空间群的枚举">2.2：自旋空间群的枚举</h3>
+<p>自旋空间群是描述磁性材料中晶格与自旋自由度独立或耦合对称性的数学框架，其核心在于将传统磁空间群扩展至包含自旋空间的连续旋转对称性。</p>
+<p>相比于自旋点群，自旋空间群由于允许任意的平移扩胞，导致自旋空间不再只允许2、3、4和6重转动，因此理论上也存在无穷多个自旋空间群。从230个晶体空间群和最大阶数为8的有限平移群出发(即允许磁结构导致的8倍扩胞)，遍历了所有晶体空间群的不等价的正规子群，并通过不等价的同构关系可以建立它们与自旋空间中描述自旋分布的点群的映射。</p>
+<table>
+<thead>
+<tr>
+<th>晶系</th>
+<th style="text-align: right;">共线</th>
+<th style="text-align: right;">非共线</th>
+<th style="text-align: right;">总数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三斜(2)</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr>
+<td>单斜(13)</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">3540</td>
+<td style="text-align: right;">3618</td>
+</tr>
+<tr>
+<td>正交(59)</td>
+<td style="text-align: right;">503</td>
+<td style="text-align: right;">53734</td>
+<td style="text-align: right;">54237</td>
+</tr>
+<tr>
+<td>四方(68)</td>
+<td style="text-align: right;">502</td>
+<td style="text-align: right;">31185</td>
+<td style="text-align: right;">31687</td>
+</tr>
+<tr>
+<td>三方(25)</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">2393</td>
+<td style="text-align: right;">2476</td>
+</tr>
+<tr>
+<td>六方(27)</td>
+<td style="text-align: right;">137</td>
+<td style="text-align: right;">7260</td>
+<td style="text-align: right;">7397</td>
+</tr>
+<tr>
+<td>立方(36)</td>
+<td style="text-align: right;">113</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: right;">1137</td>
+</tr>
+<tr>
+<td>​<strong>总数(230)​</strong>​</td>
+<td style="text-align: right;">1421</td>
+<td style="text-align: right;">99191</td>
+<td style="text-align: right;">100612</td>
+</tr>
+</tbody>
+</table>
+<h3 id="自旋空间群的物理效应">2.3：自旋空间群的物理效应</h3>
+<p>​1.
+自旋劈裂：共面反铁磁体CeAuAl₃的螺旋序诱导动量依赖自旋极化​在共面反铁磁体CeAuAl₃中，螺旋磁序通过破坏时间-空间反演对称性（如自旋翻转-平移操作的缺失），诱导了动量依赖的自旋极化。</p>
+<p>​2.
+几何霍尔效应：非共面反铁磁体CoNb₃S₆的无自旋轨道耦合霍尔电导​在非共面反铁磁体CoNb₃S₆中，自旋空间群的对称性允许实空间磁矩的几何构型直接诱导霍尔效应，无需依赖自旋轨道耦合。</p>
+<p>​3.
+自旋群保护的Z₂拓扑相：交错磁体中的预言与观测​自旋空间群理论揭示了交错磁体中受Z₂拓扑保护的物态。</p>
+<h1 id="发展前景与挑战">3. 发展前景与挑战</h1>
+<p>自旋空间群理论为材料设计提供了新的对称性框架，对量子几何效应调控与新型功能材料的研发，​尤其在调控量子几何效应（如贝里曲率、量子度规）方面具有突破性意义。
+自旋空间群的不可约表示理论是解析材料电子和磁振子能带的关键工具。</p>
+<h2 id="参考文献">参考文献</h2>
+<p>[1] Bradley C J，Cracknell A P. The Mathematical Theory of Symmetry
+in Solids：Representation Theory for Point Groups and Space Groups.
+Oxford University Press，New York，1972</p>
+<p>[2] Belov N V，Neronova N N，Smirnova T S. Sov. Phys.
+Crystallogr.，1957，2：311</p>
+<p>[3] Chen, X., Liu, Y., Liu, P. et al. Unconventional magnons in
+collinear magnets dictated by spin space groups. Nature 640, 349–354
+(2025)</p>
+]]></content>
+      <tags>
+        <tag>化学</tag>
+        <tag>晶体学</tag>
+        <tag>点群</tag>
       </tags>
   </entry>
 </search>
