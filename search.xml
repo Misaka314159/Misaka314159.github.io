@@ -1,510 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>点群与空间群</title>
-    <url>/2026/02/27/%E7%82%B9%E7%BE%A4%E4%B8%8E%E7%A9%BA%E9%97%B4%E7%BE%A4/</url>
-    <content><![CDATA[<h1
-id="点群与空间群对称性理论的基础与前沿发展">点群与空间群：对称性理论的基础与前沿发展</h1>
-<h2 id="摘要">摘要</h2>
-<p>点群和空间群是描述晶体对称性的核心数学工具，分别表征宏观几何对称性与微观平移对称性的组合。本文系统梳理了晶体学中32种点群与230种空间群的分类规则及其物理意义，结合群论与实验技术揭示了其在材料物性预测中的关键作用。近年来，随着磁性材料和量子拓扑物态研究的深入，传统空间群理论已拓展至自旋空间群领域，通过分离晶格与自旋自由度，揭示了磁有序材料中超越传统磁群的新奇物理效应。本文还总结了自旋空间群的枚举方法、表示理论及其在反常霍尔效应、自旋劈裂等领域的应用，并展望了其在量子计算与拓扑材料设计中的潜力。</p>
-<p>​关键词​：点群；空间群；自旋空间群；对称性破缺；磁性材料</p>
-<span id="more"></span>
-<h2 id="基础概念与理论框架">1：基础概念与理论框架</h2>
-<h3 id="点群">1.1：点群</h3>
-<p>点群定义为保持晶体中至少一点固定的对称操作集合，是描述晶体或分子对称性的数学工具。</p>
-<p>其中对称操作有旋转，反演，反映，这些操作都满足正交变换。点群仅描述方向对称性，不涉及平移操作。在晶体学中，由于周期性限制，可以证明旋转轴仅允许1、2、3、4、6次（排除5次轴）。在三维晶体中存在32种点群，根据对称元素组合分为7大晶系。</p>
-<p>同时，由于晶体按周期性排列，我们可以更加直观地用晶格的几何形状进行分类，得到7大晶系。</p>
-<p>点群通过对称元素的组合（如旋转轴与镜面）决定晶体的宏观性质（如分子极性、光谱活性），是分析材料物理化学性质的基础。</p>
-<h3 id="空间群">1.2：空间群</h3>
-<p>空间群是点群与平移操作的结合，描述晶体微观对称性​，即原子排列的周期性对称，共230种，由俄国学者费多洛夫与德国学者薛弗利斯于1891年独立提出。
-空间群分为​点式空间群​（73种）和​非点式空间群​（157种）。​点式空间群仅含点对称操作（旋转、反射）与晶格平移，如简单立方晶系的Pm3m。​非点式空间群引入微观对称元素​，如螺旋轴​（如4₁轴），旋转后沿轴平移分数周期（如1/4晶胞长度）和滑移面​（如a、n、d型）：反射后沿特定方向滑移（如沿晶轴平移1/2周期）。</p>
-<p>​数学形式​上，空间群可表示为平移群（T）与点群（P）的半直积​：S=T⋊P，反映点群操作对平移向量的作用。在​国际符号​表示上，空间群符号由
-​格子类型（Lattice Type）​​ 和 ​对称元素方向（Symmetry Elements）​​
-构成，形式为 ​LS₁S₂S₃。例如，空间群P4₂/ncm表示： ​P​：简单四方格子；
-​4₂​：4次螺旋轴（旋转90°后平移1/2周期）； ​n​：对角线滑移面；
-​c​：轴向滑移面。</p>
-<h2 id="前沿研究自旋空间群的突破">2：前沿研究——自旋空间群的突破</h2>
-<h3 id="自旋空间群的研究与发展">2.1：自旋空间群的研究与发展</h3>
-<p>在20世纪上半叶，科学家们开始意识到除了几何对称性外，磁性材料还表现出了额外的对称性。这些对称性与材料内部的原子或离子内禀的自旋自由度有关。20世纪中叶，晶体学家Alexei
-V.
-Shubnikov等人将使自旋翻转的反对称操作引入空间群，用于磁性材料的对称性分析，并提出了磁性点群和磁性空间群。</p>
-<p>随着对磁性材料更深入的研究，人们逐渐意识到需要一个更加全面的群来完全表征磁有序材料的几何形状和物理性质。这源于自旋磁矩作为材料的内秉自由度，除了翻转属性外还具有可旋转的轴矢量属性。因此，自旋空间的对称操作在不考虑与晶格耦合的情况下，可以独立于晶格对称操作而存在。一个典型的例子是晶体中的顺磁——铁磁相变对应的是自旋SU(2)旋转对称性的破缺。而在磁群中，自旋和晶格的转动是严格锁定在一起的。如果要完整描述磁有序材料的构型，需要将晶格和自旋空间的对称操作分开考虑（如图1），从而构成一个更庞大的群——自旋群，包括自旋点群和自旋空间群。</p>
-<p>目前已发现1421种共线自旋群与超10万种非共线自旋空间群，涵盖立方、六方等晶系。</p>
-<h3 id="自旋空间群的枚举">2.2：自旋空间群的枚举</h3>
-<p>自旋空间群是描述磁性材料中晶格与自旋自由度独立或耦合对称性的数学框架，其核心在于将传统磁空间群扩展至包含自旋空间的连续旋转对称性。</p>
-<p>相比于自旋点群，自旋空间群由于允许任意的平移扩胞，导致自旋空间不再只允许2、3、4和6重转动，因此理论上也存在无穷多个自旋空间群。从230个晶体空间群和最大阶数为8的有限平移群出发(即允许磁结构导致的8倍扩胞)，遍历了所有晶体空间群的不等价的正规子群，并通过不等价的同构关系可以建立它们与自旋空间中描述自旋分布的点群的映射。</p>
-<table>
-<thead>
-<tr>
-<th>晶系</th>
-<th style="text-align: right;">共线</th>
-<th style="text-align: right;">非共线</th>
-<th style="text-align: right;">总数</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>三斜(2)</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">55</td>
-<td style="text-align: right;">60</td>
-</tr>
-<tr>
-<td>单斜(13)</td>
-<td style="text-align: right;">78</td>
-<td style="text-align: right;">3540</td>
-<td style="text-align: right;">3618</td>
-</tr>
-<tr>
-<td>正交(59)</td>
-<td style="text-align: right;">503</td>
-<td style="text-align: right;">53734</td>
-<td style="text-align: right;">54237</td>
-</tr>
-<tr>
-<td>四方(68)</td>
-<td style="text-align: right;">502</td>
-<td style="text-align: right;">31185</td>
-<td style="text-align: right;">31687</td>
-</tr>
-<tr>
-<td>三方(25)</td>
-<td style="text-align: right;">83</td>
-<td style="text-align: right;">2393</td>
-<td style="text-align: right;">2476</td>
-</tr>
-<tr>
-<td>六方(27)</td>
-<td style="text-align: right;">137</td>
-<td style="text-align: right;">7260</td>
-<td style="text-align: right;">7397</td>
-</tr>
-<tr>
-<td>立方(36)</td>
-<td style="text-align: right;">113</td>
-<td style="text-align: right;">1024</td>
-<td style="text-align: right;">1137</td>
-</tr>
-<tr>
-<td>​<strong>总数(230)​</strong>​</td>
-<td style="text-align: right;">1421</td>
-<td style="text-align: right;">99191</td>
-<td style="text-align: right;">100612</td>
-</tr>
-</tbody>
-</table>
-<h3 id="自旋空间群的物理效应">2.3：自旋空间群的物理效应</h3>
-<p>​1.
-自旋劈裂：共面反铁磁体CeAuAl₃的螺旋序诱导动量依赖自旋极化​在共面反铁磁体CeAuAl₃中，螺旋磁序通过破坏时间-空间反演对称性（如自旋翻转-平移操作的缺失），诱导了动量依赖的自旋极化。</p>
-<p>​2.
-几何霍尔效应：非共面反铁磁体CoNb₃S₆的无自旋轨道耦合霍尔电导​在非共面反铁磁体CoNb₃S₆中，自旋空间群的对称性允许实空间磁矩的几何构型直接诱导霍尔效应，无需依赖自旋轨道耦合。</p>
-<p>​3.
-自旋群保护的Z₂拓扑相：交错磁体中的预言与观测​自旋空间群理论揭示了交错磁体中受Z₂拓扑保护的物态。</p>
-<h1 id="发展前景与挑战">3. 发展前景与挑战</h1>
-<p>自旋空间群理论为材料设计提供了新的对称性框架，对量子几何效应调控与新型功能材料的研发，​尤其在调控量子几何效应（如贝里曲率、量子度规）方面具有突破性意义。
-自旋空间群的不可约表示理论是解析材料电子和磁振子能带的关键工具。</p>
-<h2 id="参考文献">参考文献</h2>
-<p>[1] Bradley C J，Cracknell A P. The Mathematical Theory of Symmetry
-in Solids：Representation Theory for Point Groups and Space Groups.
-Oxford University Press，New York，1972</p>
-<p>[2] Belov N V，Neronova N N，Smirnova T S. Sov. Phys.
-Crystallogr.，1957，2：311</p>
-<p>[3] Chen, X., Liu, Y., Liu, P. et al. Unconventional magnons in
-collinear magnets dictated by spin space groups. Nature 640, 349–354
-(2025)</p>
-]]></content>
-      <tags>
-        <tag>晶体学</tag>
-        <tag>点群</tag>
-        <tag>化学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《手性钙钛矿及其在自旋发光二极管中的应用》论文阅读Day1</title>
-    <url>/2026/03/01/%E3%80%8A%E6%89%8B%E6%80%A7%E9%92%99%E9%92%9B%E7%9F%BF%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%87%AA%E6%97%8B%E5%8F%91%E5%85%89%E4%BA%8C%E6%9E%81%E7%AE%A1%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%8B%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBday1/</url>
-    <content><![CDATA[<h3 id="提要">提要</h3>
-<p>本文是2025
-年《发光学报》领域内系统性综述，完整梳理了手性钙钛矿的手性来源、CISS
-效应机理、室温自旋发光二极管（spin-LEDs）的研究进展，为相关研究提供全面参考。</p>
-<p>手性材料本征特性：空间反演对称性破缺，具备圆二色性（CD）、圆偏振发光（CPL）。</p>
-<p>金属卤化物钙钛矿（MHPs）的固有局限：中心对称化学结构无本征手性，无法直接应用于手性光电领域。</p>
-<p>手性钙钛矿的核心价值：结合钙钛矿优异光电特性 + 手性诱导的 CISS
-效应，实现室温、无外磁场下的自旋极化载流子注入，是 spin-LEDs
-的核心候选材料。</p>
-<h3 id="关键词">关键词</h3>
-<p>手性钙钛矿、自旋发光二极管（spin-LEDs）、手性诱导自旋选择（CISS）效应、<span
-style="color: red;">自旋轨道耦合（SOC）</span>、圆偏振电致发光（CP-EL）</p>
-<p>在每天的阅读中，计划针对这些关键词展开学习。标红的为当天学习内容。</p>
-<span id="more"></span>
-<h2 id="自旋轨道耦合soc学习">自旋轨道耦合（SOC）学习</h2>
-<p>SOC
-是手性钙钛矿实现手性诱导自旋选择（CISS）效应的核心物理根基，也是理解室温自旋发光二极管（spin-LEDs）的前提。</p>
-<h3 id="物理本质">物理本质</h3>
-<p>自旋轨道耦合（SOC）的本质是：电子绕原子核运动时，相对论效应产生的等效磁场，与电子固有自旋磁矩发生的相互作用。</p>
-<p>对于金属卤化物钙钛矿而言，本征的重原子（Pb、Sn）带来强 SOC
-效应；而手性配体的引入会打破空间反演对称性，让原本简并的自旋能级发生定向分裂，为自旋极化载流子的产生提供了物理基础。</p>
-<h4 id="库仑场中的等效磁场">库仑场中的等效磁场</h4>
-<p>电子在原子核的库仑势场 <span class="math inline">\(V(r)\)</span>
-中运动，库仑场对应的电场强度为电势的负梯度：<span
-class="math inline">\(E=−∇V(r)\)</span>.</p>
-<p>电子以速度 <span class="math inline">\(v\)</span> 绕核运动，动量
-<span class="math inline">\(p=mv\)</span>（ <span
-class="math inline">\(m\)</span>
-为电子静质量）。根据狭义相对论的电磁场洛伦兹变换，在电子静止的非惯性参考系中，会感受到由运动电场产生的等效磁场（电子速度远小于光速）
-<span class="math display">\[B=\frac{1}{c^2}v \times E\]</span> 于是
-<span class="math display">\[\boldsymbol{B} = -\frac{\boldsymbol{E}
-\times \boldsymbol{p}}{m c^2}\]</span></p>
-<h4
-id="电子自旋磁矩与磁场的相互作用能">电子自旋磁矩与磁场的相互作用能</h4>
-<p>电子的固有自旋磁矩 <span class="math inline">\(μ_s\)</span>​
-与自旋角动量 <span class="math inline">\(S\)</span> 满足：（<span
-class="math inline">\(σ\)</span>为泡利矩阵） <span
-class="math display">\[μ_s=-\frac{e}{m}S\]</span> <span
-class="math display">\[S=\frac{ℏ}{2}​σ\]</span>
-磁矩在磁场中的势能（即相互作用能）为： <span
-class="math display">\[ΔH=−μ_s⋅B\]</span></p>
-<p>由于电子的参考系是旋转的非惯性系，必须引入托马斯进动修正因子
-1/2，这是推导 SOC 项的关键修正项。</p>
-<p><span class="math display">\[H_{soc}=\frac{\hbar}{4 m^{2}
-c^{2}}(\nabla V × \boldsymbol{p}) \cdot \boldsymbol{\sigma}\]</span></p>
-<h3 id="影响soc效应的因素">影响SOC效应的因素</h3>
-<p>严格来说，所有含电子的物质体系都存在自旋轨道耦合（SOC）效应，只是强弱差异极大。绝大多数体系中
-SOC 效应微弱到可完全忽略不计，只有满足特定物理条件的体系，SOC
-才会展现出可观测、可利用的显著效应（如自旋能级分裂、自旋极化输运、CISS
-效应等）。</p>
-<p>SOC 的直接作用是打破电子自旋能级的二重简并：</p>
-<p>SOC
-效应弱的自由电子：同一动量下，自旋向上和自旋向下的电子能量完全相同，能级二重简并。</p>
-<p>SOC
-效应强的体系：自旋简并解除，同一动量下，不同自旋的电子产生能级分裂。</p>
-<h4 id="原子本征属性-原子序数核电荷数">原子本征属性 ——
-原子序数（核电荷数）</h4>
-<p>SOC
-的本质是电子绕原子核运动时的相对论效应：电子在原子核的库仑势场中高速运动，以电子自身为参考系时，会感受到原子核相对运动产生的等效磁场，该磁场与电子的固有自旋磁矩发生耦合，就是
-SOC 效应。</p>
-<p>公式中，<span class="math inline">\(∇V\)</span>
-是原子核库仑势的梯度，原子核的电荷数（原子序数）越大，库仑势越强，<span
-class="math inline">\(∇V\)</span> 越大，SOC
-项的强度就越高；同时，重原子核对核外价电子的吸引力更强，电子运动速度v更接近光速c，相对论效应被进一步放大。</p>
-<p>对于重元素体系（原子序数≥50），本征 SOC 极强，效应显著。</p>
-<p>ps: 即使是重元素，若其仅作为微量掺杂剂存在，价层轨道未参与材料的价带
-/ 导带形成，参与光电 / 输运过程的载流子仍局域在轻元素上，体系整体的 SOC
-效应依然可忽略。</p>
-<h4 id="晶体结构与空间反演对称性">晶体结构与空间反演对称性</h4>
-<p>这是决定强本征 SOC
-能否转化为可观测、可利用的物理效应的核心开关，也是论文中手性钙钛矿的核心设计逻辑。</p>
-<p>有重原子带来的强本征
-SOC，不代表能产生定向的自旋能级分裂和自旋极化：</p>
-<p>若体系具有严格的空间反演对称性（中心对称）：不同位置、不同方向的 SOC
-效应会相互抵消，宏观上自旋简并未被打破，没有净的自旋极化，也观测不到可利用的
-SOC 相关效应；</p>
-<p>若体系打破了空间反演对称性：SOC
-的效应不会被抵消，会产生定向的自旋能级分裂（Rashba/Dresselhaus
-效应），进而实现自旋极化的调控与利用。</p>
-<p>在论文中指出，纯 3D 钙钛矿AMX3​具有中心对称的化学结构，即使 Pb、I
-带来了极强的本征
-SOC，但整体的空间反演对称性让自旋简并无法解除，因此本身不具有手性，不能直接应用于手性光电与自旋电子学领域。</p>
-<p>在 2D / 准二维钙钛矿的 A 位引入手性有机配体，会产生两个关键效果：</p>
-<p>手性配体的螺旋排列直接打破了晶体的整体空间反演对称性；</p>
-<p>手性配体通过非对称氢键作用，引发无机铅卤八面体的面内倾斜畸变，打破了无机骨架的局部反演对称性。二者共同作用，让钙钛矿本征的强
-SOC 转化为定向的自旋能级分裂，产生了可用于自旋注入的 Rashba-Dresselhaus
-效应，以及手性特异性的 SOC 项（论文中 Yu 模型的公式 5）：<span
-class="math inline">\(H_{soc }&#39;=\alpha \tau \sigma_{z}
-k_{z}\)</span>. ​其中<span
-class="math inline">\(τ\)</span>为手性材料的螺旋度，直接将手性与 SOC
-效应绑定，实现了手性依赖的自旋筛选。</p>
-<p>除了手性配体引入，界面 /
-表面效应、晶格应变、外加垂直电场，也会打破空间反演对称性，诱导产生可观测的
-SOC 效应（如半导体异质结界面的 Rashba 效应）。</p>
-<h4
-id="耦合前提电子态局域性与轨道杂化">耦合前提：电子态局域性与轨道杂化</h4>
-<p>这是决定SOC 效应能否与材料的光电 / 输运过程耦合的关键，直接关系到 SOC
-能不能在器件中发挥作用。</p>
-<p>SOC 效应主要作用在重原子的价层电子上，只有满足以下两个条件，SOC
-才能真正影响器件性能：</p>
-<p>重原子的价层轨道必须参与材料价带顶 /
-导带底的形成，让参与导电、发光的载流子（电子 / 空穴）直接处于 SOC
-的作用范围内；</p>
-<p>电子态具有一定的局域性，让载流子能感受到重原子的强库仑势，进一步放大
-SOC 效应。</p>
-<p>钙钛矿体系的天然优势：钙钛矿的价带顶主要由 Pb 的 6s 轨道和卤素的 p
-轨道构成，导带底主要由 Pb 的 6p 轨道构成，重原子
-Pb、卤素的价层轨道直接主导了载流子的输运与复合过程，SOC
-效应可以直接作用到发光、载流子注入的核心过程中。</p>
-<p>低维结构的 SOC 增强效应：论文明确指出，手性低维钙钛矿的 SOC 效应、CD
-信号远强于 3D
-体相。核心原因是低维结构的量子限域效应让激子强局域化，载流子被限制在无机八面体层内，更强烈地感受到
-Pb 原子的库仑势与 SOC 效应；而 3D 体相中激子高度离域，CD 信号随 n
-值增大快速衰减，SOC 的宏观效应被削弱。</p>
-<h3 id="半导体中两种经典-soc-效应rashba-与-dresselhaus">半导体中两种经典
-SOC 效应：Rashba 与 Dresselhaus</h3>
-<p>论文指出，钙钛矿体系中的 SOC 主要分为两类：Rashba
-效应（结构反演不对称性引发） 和 Dresselhaus
-效应（体反演不对称性引发），二者是手性钙钛矿中自旋分裂的核心理论基础。</p>
-<h4 id="rashba-效应结构反演不对称引发的-soc">Rashba
-效应：结构反演不对称引发的 SOC</h4>
-<p>Rashba
-效应源于结构反演对称性破缺，典型场景包括：半导体异质结界面、量子阱、材料表面
-/
-界面。在这些场景中，垂直于界面的内建电场会产生不对称的电势梯度，进而引发
-SOC。
-在手性钙钛矿中，手性有机配体通过氢键作用导致无机铅卤八面体发生面内倾斜畸变，打破了局部结构反演对称性，是产生
-Rashba 效应的核心原因。</p>
-<p>二维体系（如钙钛矿的 2D / 准二维结构）中，Rashba
-效应的哈密顿量对应公式: <span class="math display">\[H_{R}(k)=\alpha
-\cdot\left(k_{y} \sigma_{x}-k_{z} \sigma_{y}\right)\]</span></p>
-<p>物理量解释：<span class="math inline">\(α\)</span> 为 Rashba
-耦合系数，表征效应的强弱，与界面电场强度、材料 SOC 本征强度正相关；<span
-class="math inline">\(k_{y}\)</span>,<span
-class="math inline">\(k_{y}\)</span>为不同方向的波矢；<span
-class="math inline">\(\sigma_{x}\)</span>,<span
-class="math inline">\(\sigma_{y}\)</span> 为 x、y 方向的泡利矩阵。</p>
-<p>核心效果：产生自旋 -
-动量锁定，即电子的自旋取向与运动方向强绑定，为自旋极化载流子的筛选提供了基础。</p>
-<h4 id="dresselhaus-效应体反演不对称引发的-soc">Dresselhaus
-效应：体反演不对称引发的 SOC</h4>
-<p>Dresselhaus
-效应源于体材料本身的反演对称性破缺，典型场景是闪锌矿结构的无中心反演对称半导体。即使没有外电场，晶体本身的晶格不对称性也会引发
-SOC。
-在手性钙钛矿中，手性配体引入的螺旋畸变会打破钙钛矿晶格的体反演对称性，进而产生
-Dresselhaus 效应，与 Rashba 效应共同贡献自旋分裂。</p>
-<p>二维体系中，Dresselhaus 效应的哈密顿量对应公式: <span
-class="math display">\[H_{D}(k)=\beta \cdot\left(k_{x} \sigma_{x}-k_{y}
-\sigma_{y}\right)\]</span></p>
-<p>物理量解释：<span class="math inline">\(β\)</span> 为 Dresselhaus
-耦合系数，与晶体的体不对称性、材料本征 SOC 强度正相关；其余符号含义与
-Rashba 哈密顿量一致。</p>
-<p>与 Rashba 效应的核心区别：二者的自旋 -
-动量锁定方向不同，可通过实验区分两种效应对自旋分裂的贡献占比。</p>
-]]></content>
-      <tags>
-        <tag>化学</tag>
-        <tag>论文阅读</tag>
-        <tag>钙钛矿</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《手性钙钛矿及其在自旋发光二极管中的应用》论文阅读Day2</title>
-    <url>/2026/03/02/%E3%80%8A%E6%89%8B%E6%80%A7%E9%92%99%E9%92%9B%E7%9F%BF%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%87%AA%E6%97%8B%E5%8F%91%E5%85%89%E4%BA%8C%E6%9E%81%E7%AE%A1%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%8B%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBday1%20-%20%E5%89%AF%E6%9C%AC/</url>
-    <content><![CDATA[<h3 id="提要">提要</h3>
-<p>本文是2025
-年《发光学报》领域内系统性综述，完整梳理了手性钙钛矿的手性来源、CISS
-效应机理、室温自旋发光二极管（spin-LEDs）的研究进展，为相关研究提供全面参考。</p>
-<p>手性材料本征特性：空间反演对称性破缺，具备圆二色性（CD）、圆偏振发光（CPL）。</p>
-<p>金属卤化物钙钛矿（MHPs）的固有局限：中心对称化学结构无本征手性，无法直接应用于手性光电领域。</p>
-<p>手性钙钛矿的核心价值：结合钙钛矿优异光电特性 + 手性诱导的 CISS
-效应，实现室温、无外磁场下的自旋极化载流子注入，是 spin-LEDs
-的核心候选材料。</p>
-<h3 id="关键词">关键词</h3>
-<p>手性钙钛矿、自旋发光二极管（spin-LEDs）、<span
-style="color: red;">手性诱导自旋选择（CISS）效应</span>、自旋轨道耦合（SOC）、圆偏振电致发光（CP-EL）</p>
-<p>在每天的阅读中，计划针对这些关键词展开学习。标红的为当天学习内容。</p>
-<span id="more"></span>
-<p>CISS（Chiral Induced Spin
-Selectivity，手性诱导自旋选择效应）是这篇综述的核心逻辑枢纽。</p>
-<p>它上接手性钙钛矿的 SOC
-效应，是手性结构→自旋能级分裂→自旋极化的核心桥梁；</p>
-<p>它下接 spin-LEDs
-的器件实现，是手性钙钛矿突破传统自旋器件「低温、强外磁场依赖」瓶颈的根源，实现了室温、无外加磁场下的自旋极化载流子注入；</p>
-<p>论文明确指出：CISS 效应本质上是一种 SOC，其强弱与材料本征 SOC
-强度直接相关</p>
-<h3 id="ciss-效应的基础定义与物理起源">CISS
-效应的基础定义与物理起源</h3>
-<h4 id="定义">定义</h4>
-<p>CISS 效应是指：在具有手性的分子 /
-材料体系中，电子的输运过程具有自旋选择性 ——
-特定自旋取向的电子可以高效通过手性体系，相反自旋取向的电子则被显著抑制，最终在无外磁场、室温条件下产生净的自旋极化载流子。</p>
-<p>该效应由 Naaman 等人在 2011
-年首次系统性提出，论文中明确其核心前提是材料的手性（空间反演对称性破缺），没有手性的体系无法产生
-CISS 效应。</p>
-<p>电子在沿手性体系（如手性分子螺旋结构、手性钙钛矿的螺旋畸变晶格）输运时，会经历手性结构产生的螺旋形静电势
-<span
-class="math inline">\(E_{chiral}\)</span>​。根据狭义相对论的电磁场洛伦兹变换，在电子自身的静止参考系中，这个运动的螺旋静电势会等效产生一个手性磁场
-<span class="math inline">\(B_{chiral}\)</span>​。</p>
-<p><span class="math display">\[\boldsymbol{B}_{chiral} =
-\frac{\boldsymbol{v}}{c^2} × \boldsymbol{E}_{chiral}\]</span></p>
-<p>这个手性磁场会与电子的固有自旋磁矩发生耦合，让不同自旋取向的电子产生显著的能级差：与手性磁场方向匹配的自旋电子能垒更低，可高效输运；不匹配的自旋电子能垒更高，被抑制输运，最终实现自旋的定向筛选，也就是
-CISS 效应。</p>
-<h4 id="自旋选择性-s">自旋选择性 S</h4>
-<p>该公式用于定量描述手性体系对电子自旋的筛选能力，是 CISS
-效应的本征参数。</p>
-<p><span
-class="math display">\[S=\frac{I_{-}-I_{+}}{I_{-}+I_{+}}\]</span></p>
-<p><span
-class="math inline">\(S∈[−1,1]\)</span>，绝对值越大，自旋选择性越强，理论极限为
-±1（100% 自旋筛选）。</p>
-<h4 id="自旋极化率-p">自旋极化率 P</h4>
-<p>这是实验中最常用的 CISS 效应量化参数，论文中所有钙钛矿体系的 CISS
-效应强度均用该参数表征，也是衡量自旋注入效率的核心指标。</p>
-<p><span
-class="math display">\[P=\frac{I_{up}-I_{down}}{I_{up}+I_{down}} × 100
-\%\]</span></p>
-<p><span
-class="math inline">\(I_{up}\)</span>​：外加电压下，磁导探针磁化方向向上时，测得的通过手性材料的电流；</p>
-<p><span
-class="math inline">\(I_{down}\)</span>​：磁导探针磁化方向向下时，测得的通过手性材料的电流；</p>
-<p>物理意义：直接表征手性材料产生的自旋极化电流的比例，P 值越高，CISS
-效应越强，spin-LEDs 的自旋注入效率越高。</p>
-<p>2019 年 Lu 等人首次在钙钛矿体系中观察到 CISS 效应，室温下测得
-(R/S-MBA)₂PbI₄薄膜的 P 值高达86%；</p>
-<p>后续该团队在 Sn 基手性钙钛矿 (R/S-MBA)₂SnI₄中，测得室温 P
-值高达94%，接近 100% 的理论极限（对应论文图
-7），证明了手性钙钛矿具有极强的 CISS 效应。</p>
-<h4
-id="器件性能核心指标圆偏振发光参数">器件性能核心指标：圆偏振发光参数</h4>
-<p>CISS 效应最终在 spin-LEDs
-中，通过圆偏振电致发光（CP-EL）体现，论文用两个核心参数量化器件性能，均直接由
-CISS 效应的自旋极化率决定。</p>
-<p>有发光不对称因子 <span class="math inline">\(g\)</span></p>
-<p><span class="math display">\[g=2 ×
-\frac{I_{L}-I_{R}}{I_{L}+I_{R}}\]</span></p>
-<p><span
-class="math inline">\(I_L\)</span>​：器件发射的左旋圆偏振光强度； <span
-class="math inline">\(I_R\)</span>：器件发射的右旋圆偏振光强度；
-关键说明：<span class="math inline">\(g_{lum}\)</span>​
-为光致发光不对称因子，<span class="math inline">\(g_{CP−EL}\)</span>​
-为电致发光不对称因子，是衡量 spin-LEDs
-圆偏振性能的核心指标，绝对值越大，器件性能越好。</p>
-<h4 id="ciss-与-soc-的本质关联">CISS 与 SOC 的本质关联</h4>
-<p>CISS
-效应的本质，是手性体系中一种特殊的自旋轨道耦合效应，二者不是相互独立的物理现象，而是根源与表现的关系。</p>
-<p>论文中重点强调，手性钙钛矿是目前实现 CISS 效应、构建室温 spin-LEDs
-的理想材料。</p>
-<h3 id="ciss-效应在-spin-leds-中的核心应用逻辑">CISS 效应在 spin-LEDs
-中的核心应用逻辑</h3>
-<p>CISS 效应是所有手性钙钛矿 spin-LEDs 的工作核心，论文中总结了 4
-种器件实现路径，均围绕 CISS 效应的最大化利用展开。</p>
-<p>传统 spin-LEDs 依赖铁磁电极 +
-低温强磁场实现自旋极化载流子注入，而基于 CISS 效应的
-spin-LEDs，完全依靠手性钙钛矿的本征特性：</p>
-<p>手性钙钛矿层通过 CISS
-效应，将电注入的非极化载流子筛选为自旋极化载流子；</p>
-<p>自旋极化的电子与空穴在发光层中辐射复合，发射出与自旋取向对应的圆偏振光；</p>
-<p>整个过程在室温、无外加磁场、无铁磁电极的条件下完成，极大简化了器件结构，拓展了应用场景。</p>
-<h4
-id="手性钙钛矿4种核心器件结构与ciss效应作用对照表">手性钙钛矿4种核心器件结构与CISS效应作用对照表</h4>
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr>
-<th style="text-align: left;">核心器件结构类型</th>
-<th style="text-align: left;">CISS效应的核心作用机制</th>
-<th style="text-align: left;">器件核心优势</th>
-<th style="text-align: left;">论文中代表性性能指标</th>
-<th style="text-align: left;">论文对应关键说明与文献</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td
-style="text-align: left;"><strong>异质结结构<br>（手性注入层+非手性发光层）</strong></td>
-<td style="text-align: left;">1.
-二维手性钙钛矿层作为独立的自旋极化注入层，通过CISS效应对电注入的载流子进行自旋筛选，输出净自旋极化载流子；<br>2.
-自旋极化载流子被注入到相邻的非手性发光层中，与相反极性的非极化载流子形成自旋极化激子，最终辐射复合产生CP-EL；<br>3.
-手性层的CISS效应强弱直接决定器件的自旋注入效率上限。</td>
-<td style="text-align: left;">1.
-自旋极化功能与高效发光功能完全解耦，可分别优化手性注入层的CISS效应和发光层的光电性能；<br>2.
-器件结构设计灵活，可兼容钙钛矿纳米晶、传统量子点、Ⅲ-Ⅴ族多量子阱等多种发光体系。</td>
-<td style="text-align: left;">1. 最高电致发光不对称因子 <span
-class="math inline">\(g_{CP-EL}\)</span> 达 <span
-class="math inline">\(\boldsymbol{3.8×10^{-1}}\)</span>；<br>2.
-最高外量子效率 <span class="math inline">\(\text{EQE}\)</span> 达 <span
-class="math inline">\(\boldsymbol{10.53\%}\)</span>；<br>3.
-首次实现室温、无外磁场、无铁磁电极的钙钛矿spin-LEDs。</td>
-<td style="text-align: left;">1.
-2021年Beard团队里程碑工作，首次验证该结构可行性，对应论文文献[8]；<br>2.
-手性钙钛矿/Ⅲ-Ⅴ族化合物界面器件，对应论文文献[38]；<br>3.
-手性钙钛矿/CdSe/ZnS量子点器件，对应论文文献[39]。</td>
-</tr>
-<tr>
-<td
-style="text-align: left;"><strong>核壳纳米晶结构<br>（手性低维钙钛矿壳层+非手性钙钛矿核）</strong></td>
-<td style="text-align: left;">1.
-手性低维钙钛矿壳层通过CISS效应，对注入的载流子进行自旋筛选，在核壳界面处产生自旋极化载流子；<br>2.
-手性壳层同时起到<strong>自旋保护作用</strong>，抑制载流子在输运过程中的自旋弛豫与翻转，延长自旋寿命；<br>3.
-自旋极化载流子在非手性钙钛矿核内发生辐射复合，直接产生CP-EL。</td>
-<td style="text-align: left;">1.
-单组分纳米晶同时实现自旋极化与高效发光，无需构建多层异质结，极大简化器件制备工艺；<br>2.
-量子限域效应显著，可有效抑制自旋翻转；<br>3.
-溶液可加工性强，可通过喷墨打印等方式制备图案化器件，适配防伪等场景。</td>
-<td style="text-align: left;">1. 最高 <span
-class="math inline">\(g_{CP-EL}\)</span> 达 <span
-class="math inline">\(\boldsymbol{2.4×10^{-1}}\)</span>；<br>2. 最高
-<span class="math inline">\(\text{EQE}\)</span> 达 <span
-class="math inline">\(\boldsymbol{5.47\%}\)</span>；<br>3.
-室温下稳定工作，无外磁场依赖。</td>
-<td style="text-align: left;">1.
-Ye等首次提出该结构，对应论文文献[43]；<br>2.
-Jang等优化R/S-NEA手性配体，实现性能突破，对应论文文献[44]。</td>
-</tr>
-<tr>
-<td
-style="text-align: left;"><strong>准二维（quasi-2D）多相结构<br>（单发光层体系）</strong></td>
-<td style="text-align: left;">1.
-手性低n相（n=1）通过CISS效应产生自旋极化激子，是器件的自旋极化源；<br>2.
-利用准二维钙钛矿的<strong>多量子阱能量漏斗效应</strong>，在亚皮秒级（~0.2
-ps）内将自旋极化激子的能量和自旋同步传递到高n相/3D体相发光中心；<br>3.
-非手性中间相（n=2）可作为自旋传递桥梁，进一步增强CISS效应，减少自旋传递过程中的损耗；<br>4.
-自旋极化激子在体相发光中心完成辐射复合，产生高亮度、高圆偏振度的CP-EL。</td>
-<td style="text-align: left;">1.
-单薄膜实现自旋调控与发光，器件结构最简，制备工艺兼容性强；<br>2.
-可通过配体工程精准调控相分布，兼顾高发光效率与高圆偏振度；<br>3.
-可实现从深蓝光、绿光、红光到近红外的全波段CP-EL，适配全彩显示等场景。</td>
-<td style="text-align: left;">1. 最高 <span
-class="math inline">\(\text{EQE}\)</span> 达 <span
-class="math inline">\(\boldsymbol{15.42\%}\)</span>，为论文汇总的最高效率；<br>2.
-深蓝光器件最高 <span class="math inline">\(g_{CP-EL}\)</span> 达 <span
-class="math inline">\(\boldsymbol{1.75×10^{-1}}\)</span>；<br>3.
-绿光器件最高 <span class="math inline">\(g_{CP-EL}\)</span> 达 <span
-class="math inline">\(\boldsymbol{1.03×10^{-1}}\)</span>，<span
-class="math inline">\(\text{EQE}\)</span> 达13.5%；<br>4. 实现689~782
-nm近红外波段CP-EL。</td>
-<td style="text-align: left;">1.
-Yang等首次报道单层准二维手性钙钛矿spin-LEDs，对应论文文献[46]；<br>2.
-Xiao团队实现绿光、蓝光、深蓝光全波段覆盖，对应论文文献[47][48][49]；<br>3.
-Yao团队实现高效绿光、近红外器件，对应论文文献[50][51]；<br>4.
-Li等、Tang团队实现效率突破，对应论文文献[36][52][53]。</td>
-</tr>
-<tr>
-<td
-style="text-align: left;"><strong>非核壳手性钙钛矿纳米晶/量子点结构</strong></td>
-<td style="text-align: left;">1.
-通过原位配体修饰、配体交换等方式，将手性配体锚定在钙钛矿纳米晶表面；<br>2.
-手性配体通过强配位作用诱导纳米晶晶格发生手性畸变，通过CISS效应直接在纳米晶内产生本征自旋极化激子；<br>3.
-量子限域效应显著抑制激子的自旋弛豫，确保自旋极化激子在翻转前完成原位辐射复合，直接产生CP-EL；<br>4.
-手性配体同时起到缺陷钝化作用，提升纳米晶的发光效率与自旋寿命。</td>
-<td style="text-align: left;">1.
-纳米晶比表面积大，可锚定足量手性配体，最大化CISS效应的自旋筛选能力；<br>2.
-溶液加工性优异，适配旋涂、印刷等大面积器件制备工艺；<br>3.
-可通过卤素调控实现全可见光波段发光，适配多种光电器件场景。</td>
-<td style="text-align: left;">1. 最高 <span
-class="math inline">\(g_{CP-EL}\)</span> 达 <span
-class="math inline">\(\boldsymbol{2.85×10^{-1}}\)</span>，为论文汇总的最高圆偏振度；<br>2.
-最高 <span class="math inline">\(\text{EQE}\)</span> 达 <span
-class="math inline">\(\boldsymbol{16.8\%}\)</span>，同时实现最高亮度超
-<span class="math inline">\(\boldsymbol{28000\
-cd·m^{-2}}\)</span>；<br>3. 实现465 nm蓝光到660 nm红光全波段覆盖。</td>
-<td style="text-align: left;">1.
-He等通过超声辅助配体交换策略实现创纪录性能，对应论文文献[57]；<br>2.
-Yang等通过原位手性配体钝化实现高性能器件，对应论文文献[55]；<br>3.
-Chen等、Li等拓展了该体系的材料设计，对应论文文献[56][58]。</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-      <tags>
-        <tag>化学</tag>
-        <tag>论文阅读</tag>
-        <tag>钙钛矿</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《手性钙钛矿及其在自旋发光二极管中的应用》论文阅读Day3</title>
     <url>/2026/03/03/%E3%80%8A%E6%89%8B%E6%80%A7%E9%92%99%E9%92%9B%E7%9F%BF%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%87%AA%E6%97%8B%E5%8F%91%E5%85%89%E4%BA%8C%E6%9E%81%E7%AE%A1%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%8B%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBday1%20-%20%E5%89%AF%E6%9C%AC%20(2)/</url>
     <content><![CDATA[<h3 id="提要">提要</h3>
@@ -835,9 +331,656 @@ class="math inline">\(g_{CP−EL}\)</span>​与 EQE 的同步突破。</p>
 与显示、传感、量子信息等技术集成，开发原型器件，推动从实验室研究向商业化应用落地。</p>
 ]]></content>
       <tags>
-        <tag>化学</tag>
         <tag>论文阅读</tag>
         <tag>钙钛矿</tag>
+        <tag>化学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【结构化学2】第一次作业</title>
+    <url>/2026/03/06/%E3%80%90%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A62%E3%80%91%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/</url>
+    <content><![CDATA[<h1 id="第一周作业">第一周作业</h1>
+<span id="more"></span>
+<h2 id="题目">题目</h2>
+<ol type="1">
+<li><p>请在可见，红外，微波和射频各选择一个合适单位的单色电磁波，计算对应的波长（nm或μm），波数（<span
+class="math inline">\(\mathrm{cm^{-1}}\)</span>），频率（<span
+class="math inline">\(\mathrm{Hz}\)</span>），能量（<span
+class="math inline">\(\mathrm{eV}\)</span>和J）。</p></li>
+<li><p>把6000K的太阳，300K的地球和2.7K的宇宙分别作为一个黑体。
+1）画出谱能量密度的频率分布图
+2）找到最大辐射对应的频率以及该频率对应的波长、能量密度和电场强度。</p></li>
+<li><p>考虑一束功率4W输出的均匀圆形激光打在一个电子能级近似两能级的原子体系，光斑直径为1mm，原子体系的跃迁偶极大小为1
+Debye (1 D = 3.34×10⁻³⁰ C·m)。 1）请计算电场强度和拉比振荡频率。
+2）实验室常用的能观察到振幅略有衰减但周期性清晰的拉比振荡的判据是：拉比振荡频率≥5倍的退相干速率。原子体系电子激发态弛豫的寿命通常是10ns左右，请问上述条件下能看到原子的拉比振荡吗？
+3）如果激光功率降低到4mW，还能看到拉比振荡吗？</p></li>
+<li><p>核自旋的退相干很慢，已知某
+NMR两能级体系的退相干时间为1ms，跃迁偶极矩大小为1.5D</p>
+<ol type="1">
+<li>计算该体系的退相干速率<span
+class="math inline">\(\Gamma\)</span>；</li>
+<li>按照以上判据，求能观察到拉比振荡的最小拉比频率；</li>
+<li>计算满足该拉比频率所需的最小光场电场强度<span
+class="math inline">\(E_0\)</span>；</li>
+<li>由于黑体辐射产生的是多频域宽谱，即使上面那么大的电场强度通过黑体辐射产生也不现实，实际核磁设备中都是通过射频线圈产生定向、单色的强射频场。请以600MHz核磁跃迁频率为例，计算如上对应的电场强度如果通过黑体辐射来产生，需要把黑体加热到多少度。</li>
+</ol></li>
+</ol>
+<hr />
+<h2 id="基本物理常数取值">基本物理常数取值</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>物理量</th>
+<th>符号</th>
+<th>取值</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真空中光速</td>
+<td><span class="math inline">\(c\)</span></td>
+<td><span class="math inline">\(3.0\times10^8\)</span></td>
+<td><span class="math inline">\(\text{m/s}\)</span></td>
+</tr>
+<tr>
+<td>普朗克常数</td>
+<td><span class="math inline">\(h\)</span></td>
+<td><span class="math inline">\(6.626\times10^{-34}\)</span></td>
+<td><span class="math inline">\(\text{Js}\)</span></td>
+</tr>
+<tr>
+<td>约化普朗克常数</td>
+<td><span class="math inline">\(\hbar\)</span></td>
+<td><span class="math inline">\(1.0546\times10^{-34}\)</span></td>
+<td><span class="math inline">\(\text{Js}\)</span></td>
+</tr>
+<tr>
+<td>元电荷</td>
+<td><span class="math inline">\(e\)</span></td>
+<td><span class="math inline">\(1.602\times10^{-19}\)</span></td>
+<td><span class="math inline">\(\text{C}\)</span></td>
+</tr>
+<tr>
+<td>玻尔兹曼常数</td>
+<td><span class="math inline">\(k_B\)</span></td>
+<td><span class="math inline">\(1.3806\times10^{-23}\)</span></td>
+<td><span class="math inline">\(\text{J/K}\)</span></td>
+</tr>
+<tr>
+<td>真空介电常数</td>
+<td><span class="math inline">\(\varepsilon_0\)</span></td>
+<td><span class="math inline">\(8.854\times10^{-12}\)</span></td>
+<td><span class="math inline">\(\text{F/m}\)</span></td>
+</tr>
+<tr>
+<td>德拜单位转换</td>
+<td><span class="math inline">\(1\ \text{D}\)</span></td>
+<td><span class="math inline">\(3.34\times10^{-30}\)</span></td>
+<td><span class="math inline">\(\text{Cm}\)</span></td>
+</tr>
+<tr>
+<td>频率域维恩位移常数</td>
+<td><span class="math inline">\(\alpha\)</span></td>
+<td><span class="math inline">\(5.8789\times10^{10}\)</span></td>
+<td><span class="math inline">\(\text{Hz/K}\)</span></td>
+</tr>
+<tr>
+<td>波长域维恩位移常数</td>
+<td><span class="math inline">\(b\)</span></td>
+<td><span class="math inline">\(2.898\times10^{-3}\)</span></td>
+<td><span class="math inline">\(\text{mK}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>谱能量密度频率分布图 #### 绘图Python代码 ```python import numpy as np
+import matplotlib.pyplot as plt</p>
+<h1 id="基本常数">基本常数</h1>
+<p>h = 6.626e-34 c = 3e8 kb = 1.3806e-23</p>
+<h1 id="普朗克公式定义">普朗克公式定义</h1>
+<p>def planck_rho(nu, T): numerator = 8 * np.pi * h * (nu ** 3) / (c **
+3) exponent = h * nu / (kb * T) denominator = np.exp(exponent) - 1
+denominator[denominator == 0] = 1e-20 # 避免除零 return numerator /
+denominator</p>
+<h1 id="黑体温度设置">黑体温度设置</h1>
+<p>T_sun = 6000 # 太阳 T_earth = 300 # 地球 T_cmb = 2.7 #
+宇宙微波背景</p>
+<h1 id="频率范围100mhz-10phz覆盖三个黑体的峰值">频率范围：100MHz ~
+10PHz，覆盖三个黑体的峰值</h1>
+<p>nu = np.logspace(8, 16, 1000)</p>
+<h1 id="计算各温度的谱能量密度">计算各温度的谱能量密度</h1>
+<p>rho_sun = planck_rho(nu, T_sun) rho_earth = planck_rho(nu, T_earth)
+rho_cmb = planck_rho(nu, T_cmb)</p>
+<h1 id="绘图">绘图</h1>
+<p>plt.figure(figsize=(10,6)) plt.loglog(nu, rho_sun, label=‘6000K
+太阳’, color=‘orange’, linewidth=2) plt.loglog(nu, rho_earth,
+label=‘300K 地球’, color=‘blue’, linewidth=2) plt.loglog(nu, rho_cmb,
+label=‘2.7K 宇宙背景’, color=‘black’, linewidth=2)</p>
+<h1 id="标注峰值位置">标注峰值位置</h1>
+<p>nu_max_sun = 5.8789e10 * T_sun nu_max_earth = 5.8789e10 * T_earth
+nu_max_cmb = 5.8789e10 * T_cmb plt.axvline(nu_max_sun, color=‘orange’,
+linestyle=‘–’, alpha=0.7) plt.axvline(nu_max_earth, color=‘blue’,
+linestyle=‘–’, alpha=0.7) plt.axvline(nu_max_cmb, color=‘black’,
+linestyle=‘–’, alpha=0.7)</p>
+<p>plt.xlabel(‘频率 ν (Hz)’, fontsize=12) plt.ylabel(‘谱能量密度 ρ(ν,T)
+(J·m⁻³·Hz⁻¹)’, fontsize=12) plt.title(‘黑体谱能量密度频率分布图’,
+fontsize=14) plt.legend(fontsize=12) plt.grid(True, which=“both”,
+ls=“–”, alpha=0.5) plt.xlim(1e8, 1e16) plt.show()</p>
+]]></content>
+      <tags>
+        <tag>化学</tag>
+        <tag>课程作业</tag>
+        <tag>结构化学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>点群与空间群</title>
+    <url>/2026/02/27/%E7%82%B9%E7%BE%A4%E4%B8%8E%E7%A9%BA%E9%97%B4%E7%BE%A4/</url>
+    <content><![CDATA[<h1
+id="点群与空间群对称性理论的基础与前沿发展">点群与空间群：对称性理论的基础与前沿发展</h1>
+<h2 id="摘要">摘要</h2>
+<p>点群和空间群是描述晶体对称性的核心数学工具，分别表征宏观几何对称性与微观平移对称性的组合。本文系统梳理了晶体学中32种点群与230种空间群的分类规则及其物理意义，结合群论与实验技术揭示了其在材料物性预测中的关键作用。近年来，随着磁性材料和量子拓扑物态研究的深入，传统空间群理论已拓展至自旋空间群领域，通过分离晶格与自旋自由度，揭示了磁有序材料中超越传统磁群的新奇物理效应。本文还总结了自旋空间群的枚举方法、表示理论及其在反常霍尔效应、自旋劈裂等领域的应用，并展望了其在量子计算与拓扑材料设计中的潜力。</p>
+<p>​关键词​：点群；空间群；自旋空间群；对称性破缺；磁性材料</p>
+<span id="more"></span>
+<h2 id="基础概念与理论框架">1：基础概念与理论框架</h2>
+<h3 id="点群">1.1：点群</h3>
+<p>点群定义为保持晶体中至少一点固定的对称操作集合，是描述晶体或分子对称性的数学工具。</p>
+<p>其中对称操作有旋转，反演，反映，这些操作都满足正交变换。点群仅描述方向对称性，不涉及平移操作。在晶体学中，由于周期性限制，可以证明旋转轴仅允许1、2、3、4、6次（排除5次轴）。在三维晶体中存在32种点群，根据对称元素组合分为7大晶系。</p>
+<p>同时，由于晶体按周期性排列，我们可以更加直观地用晶格的几何形状进行分类，得到7大晶系。</p>
+<p>点群通过对称元素的组合（如旋转轴与镜面）决定晶体的宏观性质（如分子极性、光谱活性），是分析材料物理化学性质的基础。</p>
+<h3 id="空间群">1.2：空间群</h3>
+<p>空间群是点群与平移操作的结合，描述晶体微观对称性​，即原子排列的周期性对称，共230种，由俄国学者费多洛夫与德国学者薛弗利斯于1891年独立提出。
+空间群分为​点式空间群​（73种）和​非点式空间群​（157种）。​点式空间群仅含点对称操作（旋转、反射）与晶格平移，如简单立方晶系的Pm3m。​非点式空间群引入微观对称元素​，如螺旋轴​（如4₁轴），旋转后沿轴平移分数周期（如1/4晶胞长度）和滑移面​（如a、n、d型）：反射后沿特定方向滑移（如沿晶轴平移1/2周期）。</p>
+<p>​数学形式​上，空间群可表示为平移群（T）与点群（P）的半直积​：S=T⋊P，反映点群操作对平移向量的作用。在​国际符号​表示上，空间群符号由
+​格子类型（Lattice Type）​​ 和 ​对称元素方向（Symmetry Elements）​​
+构成，形式为 ​LS₁S₂S₃。例如，空间群P4₂/ncm表示： ​P​：简单四方格子；
+​4₂​：4次螺旋轴（旋转90°后平移1/2周期）； ​n​：对角线滑移面；
+​c​：轴向滑移面。</p>
+<h2 id="前沿研究自旋空间群的突破">2：前沿研究——自旋空间群的突破</h2>
+<h3 id="自旋空间群的研究与发展">2.1：自旋空间群的研究与发展</h3>
+<p>在20世纪上半叶，科学家们开始意识到除了几何对称性外，磁性材料还表现出了额外的对称性。这些对称性与材料内部的原子或离子内禀的自旋自由度有关。20世纪中叶，晶体学家Alexei
+V.
+Shubnikov等人将使自旋翻转的反对称操作引入空间群，用于磁性材料的对称性分析，并提出了磁性点群和磁性空间群。</p>
+<p>随着对磁性材料更深入的研究，人们逐渐意识到需要一个更加全面的群来完全表征磁有序材料的几何形状和物理性质。这源于自旋磁矩作为材料的内秉自由度，除了翻转属性外还具有可旋转的轴矢量属性。因此，自旋空间的对称操作在不考虑与晶格耦合的情况下，可以独立于晶格对称操作而存在。一个典型的例子是晶体中的顺磁——铁磁相变对应的是自旋SU(2)旋转对称性的破缺。而在磁群中，自旋和晶格的转动是严格锁定在一起的。如果要完整描述磁有序材料的构型，需要将晶格和自旋空间的对称操作分开考虑（如图1），从而构成一个更庞大的群——自旋群，包括自旋点群和自旋空间群。</p>
+<p>目前已发现1421种共线自旋群与超10万种非共线自旋空间群，涵盖立方、六方等晶系。</p>
+<h3 id="自旋空间群的枚举">2.2：自旋空间群的枚举</h3>
+<p>自旋空间群是描述磁性材料中晶格与自旋自由度独立或耦合对称性的数学框架，其核心在于将传统磁空间群扩展至包含自旋空间的连续旋转对称性。</p>
+<p>相比于自旋点群，自旋空间群由于允许任意的平移扩胞，导致自旋空间不再只允许2、3、4和6重转动，因此理论上也存在无穷多个自旋空间群。从230个晶体空间群和最大阶数为8的有限平移群出发(即允许磁结构导致的8倍扩胞)，遍历了所有晶体空间群的不等价的正规子群，并通过不等价的同构关系可以建立它们与自旋空间中描述自旋分布的点群的映射。</p>
+<table>
+<thead>
+<tr>
+<th>晶系</th>
+<th style="text-align: right;">共线</th>
+<th style="text-align: right;">非共线</th>
+<th style="text-align: right;">总数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三斜(2)</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr>
+<td>单斜(13)</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">3540</td>
+<td style="text-align: right;">3618</td>
+</tr>
+<tr>
+<td>正交(59)</td>
+<td style="text-align: right;">503</td>
+<td style="text-align: right;">53734</td>
+<td style="text-align: right;">54237</td>
+</tr>
+<tr>
+<td>四方(68)</td>
+<td style="text-align: right;">502</td>
+<td style="text-align: right;">31185</td>
+<td style="text-align: right;">31687</td>
+</tr>
+<tr>
+<td>三方(25)</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">2393</td>
+<td style="text-align: right;">2476</td>
+</tr>
+<tr>
+<td>六方(27)</td>
+<td style="text-align: right;">137</td>
+<td style="text-align: right;">7260</td>
+<td style="text-align: right;">7397</td>
+</tr>
+<tr>
+<td>立方(36)</td>
+<td style="text-align: right;">113</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: right;">1137</td>
+</tr>
+<tr>
+<td>​<strong>总数(230)​</strong>​</td>
+<td style="text-align: right;">1421</td>
+<td style="text-align: right;">99191</td>
+<td style="text-align: right;">100612</td>
+</tr>
+</tbody>
+</table>
+<h3 id="自旋空间群的物理效应">2.3：自旋空间群的物理效应</h3>
+<p>​1.
+自旋劈裂：共面反铁磁体CeAuAl₃的螺旋序诱导动量依赖自旋极化​在共面反铁磁体CeAuAl₃中，螺旋磁序通过破坏时间-空间反演对称性（如自旋翻转-平移操作的缺失），诱导了动量依赖的自旋极化。</p>
+<p>​2.
+几何霍尔效应：非共面反铁磁体CoNb₃S₆的无自旋轨道耦合霍尔电导​在非共面反铁磁体CoNb₃S₆中，自旋空间群的对称性允许实空间磁矩的几何构型直接诱导霍尔效应，无需依赖自旋轨道耦合。</p>
+<p>​3.
+自旋群保护的Z₂拓扑相：交错磁体中的预言与观测​自旋空间群理论揭示了交错磁体中受Z₂拓扑保护的物态。</p>
+<h1 id="发展前景与挑战">3. 发展前景与挑战</h1>
+<p>自旋空间群理论为材料设计提供了新的对称性框架，对量子几何效应调控与新型功能材料的研发，​尤其在调控量子几何效应（如贝里曲率、量子度规）方面具有突破性意义。
+自旋空间群的不可约表示理论是解析材料电子和磁振子能带的关键工具。</p>
+<h2 id="参考文献">参考文献</h2>
+<p>[1] Bradley C J，Cracknell A P. The Mathematical Theory of Symmetry
+in Solids：Representation Theory for Point Groups and Space Groups.
+Oxford University Press，New York，1972</p>
+<p>[2] Belov N V，Neronova N N，Smirnova T S. Sov. Phys.
+Crystallogr.，1957，2：311</p>
+<p>[3] Chen, X., Liu, Y., Liu, P. et al. Unconventional magnons in
+collinear magnets dictated by spin space groups. Nature 640, 349–354
+(2025)</p>
+]]></content>
+      <tags>
+        <tag>化学</tag>
+        <tag>晶体学</tag>
+        <tag>点群</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《手性钙钛矿及其在自旋发光二极管中的应用》论文阅读Day1</title>
+    <url>/2026/03/01/%E3%80%8A%E6%89%8B%E6%80%A7%E9%92%99%E9%92%9B%E7%9F%BF%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%87%AA%E6%97%8B%E5%8F%91%E5%85%89%E4%BA%8C%E6%9E%81%E7%AE%A1%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%8B%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBday1/</url>
+    <content><![CDATA[<h3 id="提要">提要</h3>
+<p>本文是2025
+年《发光学报》领域内系统性综述，完整梳理了手性钙钛矿的手性来源、CISS
+效应机理、室温自旋发光二极管（spin-LEDs）的研究进展，为相关研究提供全面参考。</p>
+<p>手性材料本征特性：空间反演对称性破缺，具备圆二色性（CD）、圆偏振发光（CPL）。</p>
+<p>金属卤化物钙钛矿（MHPs）的固有局限：中心对称化学结构无本征手性，无法直接应用于手性光电领域。</p>
+<p>手性钙钛矿的核心价值：结合钙钛矿优异光电特性 + 手性诱导的 CISS
+效应，实现室温、无外磁场下的自旋极化载流子注入，是 spin-LEDs
+的核心候选材料。</p>
+<h3 id="关键词">关键词</h3>
+<p>手性钙钛矿、自旋发光二极管（spin-LEDs）、手性诱导自旋选择（CISS）效应、<span
+style="color: red;">自旋轨道耦合（SOC）</span>、圆偏振电致发光（CP-EL）</p>
+<p>在每天的阅读中，计划针对这些关键词展开学习。标红的为当天学习内容。</p>
+<span id="more"></span>
+<h2 id="自旋轨道耦合soc学习">自旋轨道耦合（SOC）学习</h2>
+<p>SOC
+是手性钙钛矿实现手性诱导自旋选择（CISS）效应的核心物理根基，也是理解室温自旋发光二极管（spin-LEDs）的前提。</p>
+<h3 id="物理本质">物理本质</h3>
+<p>自旋轨道耦合（SOC）的本质是：电子绕原子核运动时，相对论效应产生的等效磁场，与电子固有自旋磁矩发生的相互作用。</p>
+<p>对于金属卤化物钙钛矿而言，本征的重原子（Pb、Sn）带来强 SOC
+效应；而手性配体的引入会打破空间反演对称性，让原本简并的自旋能级发生定向分裂，为自旋极化载流子的产生提供了物理基础。</p>
+<h4 id="库仑场中的等效磁场">库仑场中的等效磁场</h4>
+<p>电子在原子核的库仑势场 <span class="math inline">\(V(r)\)</span>
+中运动，库仑场对应的电场强度为电势的负梯度：<span
+class="math inline">\(E=−∇V(r)\)</span>.</p>
+<p>电子以速度 <span class="math inline">\(v\)</span> 绕核运动，动量
+<span class="math inline">\(p=mv\)</span>（ <span
+class="math inline">\(m\)</span>
+为电子静质量）。根据狭义相对论的电磁场洛伦兹变换，在电子静止的非惯性参考系中，会感受到由运动电场产生的等效磁场（电子速度远小于光速）
+<span class="math display">\[B=\frac{1}{c^2}v \times E\]</span> 于是
+<span class="math display">\[\boldsymbol{B} = -\frac{\boldsymbol{E}
+\times \boldsymbol{p}}{m c^2}\]</span></p>
+<h4
+id="电子自旋磁矩与磁场的相互作用能">电子自旋磁矩与磁场的相互作用能</h4>
+<p>电子的固有自旋磁矩 <span class="math inline">\(μ_s\)</span>​
+与自旋角动量 <span class="math inline">\(S\)</span> 满足：（<span
+class="math inline">\(σ\)</span>为泡利矩阵） <span
+class="math display">\[μ_s=-\frac{e}{m}S\]</span> <span
+class="math display">\[S=\frac{ℏ}{2}​σ\]</span>
+磁矩在磁场中的势能（即相互作用能）为： <span
+class="math display">\[ΔH=−μ_s⋅B\]</span></p>
+<p>由于电子的参考系是旋转的非惯性系，必须引入托马斯进动修正因子
+1/2，这是推导 SOC 项的关键修正项。</p>
+<p><span class="math display">\[H_{soc}=\frac{\hbar}{4 m^{2}
+c^{2}}(\nabla V × \boldsymbol{p}) \cdot \boldsymbol{\sigma}\]</span></p>
+<h3 id="影响soc效应的因素">影响SOC效应的因素</h3>
+<p>严格来说，所有含电子的物质体系都存在自旋轨道耦合（SOC）效应，只是强弱差异极大。绝大多数体系中
+SOC 效应微弱到可完全忽略不计，只有满足特定物理条件的体系，SOC
+才会展现出可观测、可利用的显著效应（如自旋能级分裂、自旋极化输运、CISS
+效应等）。</p>
+<p>SOC 的直接作用是打破电子自旋能级的二重简并：</p>
+<p>SOC
+效应弱的自由电子：同一动量下，自旋向上和自旋向下的电子能量完全相同，能级二重简并。</p>
+<p>SOC
+效应强的体系：自旋简并解除，同一动量下，不同自旋的电子产生能级分裂。</p>
+<h4 id="原子本征属性-原子序数核电荷数">原子本征属性 ——
+原子序数（核电荷数）</h4>
+<p>SOC
+的本质是电子绕原子核运动时的相对论效应：电子在原子核的库仑势场中高速运动，以电子自身为参考系时，会感受到原子核相对运动产生的等效磁场，该磁场与电子的固有自旋磁矩发生耦合，就是
+SOC 效应。</p>
+<p>公式中，<span class="math inline">\(∇V\)</span>
+是原子核库仑势的梯度，原子核的电荷数（原子序数）越大，库仑势越强，<span
+class="math inline">\(∇V\)</span> 越大，SOC
+项的强度就越高；同时，重原子核对核外价电子的吸引力更强，电子运动速度v更接近光速c，相对论效应被进一步放大。</p>
+<p>对于重元素体系（原子序数≥50），本征 SOC 极强，效应显著。</p>
+<p>ps: 即使是重元素，若其仅作为微量掺杂剂存在，价层轨道未参与材料的价带
+/ 导带形成，参与光电 / 输运过程的载流子仍局域在轻元素上，体系整体的 SOC
+效应依然可忽略。</p>
+<h4 id="晶体结构与空间反演对称性">晶体结构与空间反演对称性</h4>
+<p>这是决定强本征 SOC
+能否转化为可观测、可利用的物理效应的核心开关，也是论文中手性钙钛矿的核心设计逻辑。</p>
+<p>有重原子带来的强本征
+SOC，不代表能产生定向的自旋能级分裂和自旋极化：</p>
+<p>若体系具有严格的空间反演对称性（中心对称）：不同位置、不同方向的 SOC
+效应会相互抵消，宏观上自旋简并未被打破，没有净的自旋极化，也观测不到可利用的
+SOC 相关效应；</p>
+<p>若体系打破了空间反演对称性：SOC
+的效应不会被抵消，会产生定向的自旋能级分裂（Rashba/Dresselhaus
+效应），进而实现自旋极化的调控与利用。</p>
+<p>在论文中指出，纯 3D 钙钛矿AMX3​具有中心对称的化学结构，即使 Pb、I
+带来了极强的本征
+SOC，但整体的空间反演对称性让自旋简并无法解除，因此本身不具有手性，不能直接应用于手性光电与自旋电子学领域。</p>
+<p>在 2D / 准二维钙钛矿的 A 位引入手性有机配体，会产生两个关键效果：</p>
+<p>手性配体的螺旋排列直接打破了晶体的整体空间反演对称性；</p>
+<p>手性配体通过非对称氢键作用，引发无机铅卤八面体的面内倾斜畸变，打破了无机骨架的局部反演对称性。二者共同作用，让钙钛矿本征的强
+SOC 转化为定向的自旋能级分裂，产生了可用于自旋注入的 Rashba-Dresselhaus
+效应，以及手性特异性的 SOC 项（论文中 Yu 模型的公式 5）：<span
+class="math inline">\(H_{soc }&#39;=\alpha \tau \sigma_{z}
+k_{z}\)</span>. ​其中<span
+class="math inline">\(τ\)</span>为手性材料的螺旋度，直接将手性与 SOC
+效应绑定，实现了手性依赖的自旋筛选。</p>
+<p>除了手性配体引入，界面 /
+表面效应、晶格应变、外加垂直电场，也会打破空间反演对称性，诱导产生可观测的
+SOC 效应（如半导体异质结界面的 Rashba 效应）。</p>
+<h4
+id="耦合前提电子态局域性与轨道杂化">耦合前提：电子态局域性与轨道杂化</h4>
+<p>这是决定SOC 效应能否与材料的光电 / 输运过程耦合的关键，直接关系到 SOC
+能不能在器件中发挥作用。</p>
+<p>SOC 效应主要作用在重原子的价层电子上，只有满足以下两个条件，SOC
+才能真正影响器件性能：</p>
+<p>重原子的价层轨道必须参与材料价带顶 /
+导带底的形成，让参与导电、发光的载流子（电子 / 空穴）直接处于 SOC
+的作用范围内；</p>
+<p>电子态具有一定的局域性，让载流子能感受到重原子的强库仑势，进一步放大
+SOC 效应。</p>
+<p>钙钛矿体系的天然优势：钙钛矿的价带顶主要由 Pb 的 6s 轨道和卤素的 p
+轨道构成，导带底主要由 Pb 的 6p 轨道构成，重原子
+Pb、卤素的价层轨道直接主导了载流子的输运与复合过程，SOC
+效应可以直接作用到发光、载流子注入的核心过程中。</p>
+<p>低维结构的 SOC 增强效应：论文明确指出，手性低维钙钛矿的 SOC 效应、CD
+信号远强于 3D
+体相。核心原因是低维结构的量子限域效应让激子强局域化，载流子被限制在无机八面体层内，更强烈地感受到
+Pb 原子的库仑势与 SOC 效应；而 3D 体相中激子高度离域，CD 信号随 n
+值增大快速衰减，SOC 的宏观效应被削弱。</p>
+<h3 id="半导体中两种经典-soc-效应rashba-与-dresselhaus">半导体中两种经典
+SOC 效应：Rashba 与 Dresselhaus</h3>
+<p>论文指出，钙钛矿体系中的 SOC 主要分为两类：Rashba
+效应（结构反演不对称性引发） 和 Dresselhaus
+效应（体反演不对称性引发），二者是手性钙钛矿中自旋分裂的核心理论基础。</p>
+<h4 id="rashba-效应结构反演不对称引发的-soc">Rashba
+效应：结构反演不对称引发的 SOC</h4>
+<p>Rashba
+效应源于结构反演对称性破缺，典型场景包括：半导体异质结界面、量子阱、材料表面
+/
+界面。在这些场景中，垂直于界面的内建电场会产生不对称的电势梯度，进而引发
+SOC。
+在手性钙钛矿中，手性有机配体通过氢键作用导致无机铅卤八面体发生面内倾斜畸变，打破了局部结构反演对称性，是产生
+Rashba 效应的核心原因。</p>
+<p>二维体系（如钙钛矿的 2D / 准二维结构）中，Rashba
+效应的哈密顿量对应公式: <span class="math display">\[H_{R}(k)=\alpha
+\cdot\left(k_{y} \sigma_{x}-k_{z} \sigma_{y}\right)\]</span></p>
+<p>物理量解释：<span class="math inline">\(α\)</span> 为 Rashba
+耦合系数，表征效应的强弱，与界面电场强度、材料 SOC 本征强度正相关；<span
+class="math inline">\(k_{y}\)</span>,<span
+class="math inline">\(k_{y}\)</span>为不同方向的波矢；<span
+class="math inline">\(\sigma_{x}\)</span>,<span
+class="math inline">\(\sigma_{y}\)</span> 为 x、y 方向的泡利矩阵。</p>
+<p>核心效果：产生自旋 -
+动量锁定，即电子的自旋取向与运动方向强绑定，为自旋极化载流子的筛选提供了基础。</p>
+<h4 id="dresselhaus-效应体反演不对称引发的-soc">Dresselhaus
+效应：体反演不对称引发的 SOC</h4>
+<p>Dresselhaus
+效应源于体材料本身的反演对称性破缺，典型场景是闪锌矿结构的无中心反演对称半导体。即使没有外电场，晶体本身的晶格不对称性也会引发
+SOC。
+在手性钙钛矿中，手性配体引入的螺旋畸变会打破钙钛矿晶格的体反演对称性，进而产生
+Dresselhaus 效应，与 Rashba 效应共同贡献自旋分裂。</p>
+<p>二维体系中，Dresselhaus 效应的哈密顿量对应公式: <span
+class="math display">\[H_{D}(k)=\beta \cdot\left(k_{x} \sigma_{x}-k_{y}
+\sigma_{y}\right)\]</span></p>
+<p>物理量解释：<span class="math inline">\(β\)</span> 为 Dresselhaus
+耦合系数，与晶体的体不对称性、材料本征 SOC 强度正相关；其余符号含义与
+Rashba 哈密顿量一致。</p>
+<p>与 Rashba 效应的核心区别：二者的自旋 -
+动量锁定方向不同，可通过实验区分两种效应对自旋分裂的贡献占比。</p>
+]]></content>
+      <tags>
+        <tag>论文阅读</tag>
+        <tag>钙钛矿</tag>
+        <tag>化学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《手性钙钛矿及其在自旋发光二极管中的应用》论文阅读Day2</title>
+    <url>/2026/03/02/%E3%80%8A%E6%89%8B%E6%80%A7%E9%92%99%E9%92%9B%E7%9F%BF%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%87%AA%E6%97%8B%E5%8F%91%E5%85%89%E4%BA%8C%E6%9E%81%E7%AE%A1%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%8B%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBday1%20-%20%E5%89%AF%E6%9C%AC/</url>
+    <content><![CDATA[<h3 id="提要">提要</h3>
+<p>本文是2025
+年《发光学报》领域内系统性综述，完整梳理了手性钙钛矿的手性来源、CISS
+效应机理、室温自旋发光二极管（spin-LEDs）的研究进展，为相关研究提供全面参考。</p>
+<p>手性材料本征特性：空间反演对称性破缺，具备圆二色性（CD）、圆偏振发光（CPL）。</p>
+<p>金属卤化物钙钛矿（MHPs）的固有局限：中心对称化学结构无本征手性，无法直接应用于手性光电领域。</p>
+<p>手性钙钛矿的核心价值：结合钙钛矿优异光电特性 + 手性诱导的 CISS
+效应，实现室温、无外磁场下的自旋极化载流子注入，是 spin-LEDs
+的核心候选材料。</p>
+<h3 id="关键词">关键词</h3>
+<p>手性钙钛矿、自旋发光二极管（spin-LEDs）、<span
+style="color: red;">手性诱导自旋选择（CISS）效应</span>、自旋轨道耦合（SOC）、圆偏振电致发光（CP-EL）</p>
+<p>在每天的阅读中，计划针对这些关键词展开学习。标红的为当天学习内容。</p>
+<span id="more"></span>
+<p>CISS（Chiral Induced Spin
+Selectivity，手性诱导自旋选择效应）是这篇综述的核心逻辑枢纽。</p>
+<p>它上接手性钙钛矿的 SOC
+效应，是手性结构→自旋能级分裂→自旋极化的核心桥梁；</p>
+<p>它下接 spin-LEDs
+的器件实现，是手性钙钛矿突破传统自旋器件「低温、强外磁场依赖」瓶颈的根源，实现了室温、无外加磁场下的自旋极化载流子注入；</p>
+<p>论文明确指出：CISS 效应本质上是一种 SOC，其强弱与材料本征 SOC
+强度直接相关</p>
+<h3 id="ciss-效应的基础定义与物理起源">CISS
+效应的基础定义与物理起源</h3>
+<h4 id="定义">定义</h4>
+<p>CISS 效应是指：在具有手性的分子 /
+材料体系中，电子的输运过程具有自旋选择性 ——
+特定自旋取向的电子可以高效通过手性体系，相反自旋取向的电子则被显著抑制，最终在无外磁场、室温条件下产生净的自旋极化载流子。</p>
+<p>该效应由 Naaman 等人在 2011
+年首次系统性提出，论文中明确其核心前提是材料的手性（空间反演对称性破缺），没有手性的体系无法产生
+CISS 效应。</p>
+<p>电子在沿手性体系（如手性分子螺旋结构、手性钙钛矿的螺旋畸变晶格）输运时，会经历手性结构产生的螺旋形静电势
+<span
+class="math inline">\(E_{chiral}\)</span>​。根据狭义相对论的电磁场洛伦兹变换，在电子自身的静止参考系中，这个运动的螺旋静电势会等效产生一个手性磁场
+<span class="math inline">\(B_{chiral}\)</span>​。</p>
+<p><span class="math display">\[\boldsymbol{B}_{chiral} =
+\frac{\boldsymbol{v}}{c^2} × \boldsymbol{E}_{chiral}\]</span></p>
+<p>这个手性磁场会与电子的固有自旋磁矩发生耦合，让不同自旋取向的电子产生显著的能级差：与手性磁场方向匹配的自旋电子能垒更低，可高效输运；不匹配的自旋电子能垒更高，被抑制输运，最终实现自旋的定向筛选，也就是
+CISS 效应。</p>
+<h4 id="自旋选择性-s">自旋选择性 S</h4>
+<p>该公式用于定量描述手性体系对电子自旋的筛选能力，是 CISS
+效应的本征参数。</p>
+<p><span
+class="math display">\[S=\frac{I_{-}-I_{+}}{I_{-}+I_{+}}\]</span></p>
+<p><span
+class="math inline">\(S∈[−1,1]\)</span>，绝对值越大，自旋选择性越强，理论极限为
+±1（100% 自旋筛选）。</p>
+<h4 id="自旋极化率-p">自旋极化率 P</h4>
+<p>这是实验中最常用的 CISS 效应量化参数，论文中所有钙钛矿体系的 CISS
+效应强度均用该参数表征，也是衡量自旋注入效率的核心指标。</p>
+<p><span
+class="math display">\[P=\frac{I_{up}-I_{down}}{I_{up}+I_{down}} × 100
+\%\]</span></p>
+<p><span
+class="math inline">\(I_{up}\)</span>​：外加电压下，磁导探针磁化方向向上时，测得的通过手性材料的电流；</p>
+<p><span
+class="math inline">\(I_{down}\)</span>​：磁导探针磁化方向向下时，测得的通过手性材料的电流；</p>
+<p>物理意义：直接表征手性材料产生的自旋极化电流的比例，P 值越高，CISS
+效应越强，spin-LEDs 的自旋注入效率越高。</p>
+<p>2019 年 Lu 等人首次在钙钛矿体系中观察到 CISS 效应，室温下测得
+(R/S-MBA)₂PbI₄薄膜的 P 值高达86%；</p>
+<p>后续该团队在 Sn 基手性钙钛矿 (R/S-MBA)₂SnI₄中，测得室温 P
+值高达94%，接近 100% 的理论极限（对应论文图
+7），证明了手性钙钛矿具有极强的 CISS 效应。</p>
+<h4
+id="器件性能核心指标圆偏振发光参数">器件性能核心指标：圆偏振发光参数</h4>
+<p>CISS 效应最终在 spin-LEDs
+中，通过圆偏振电致发光（CP-EL）体现，论文用两个核心参数量化器件性能，均直接由
+CISS 效应的自旋极化率决定。</p>
+<p>有发光不对称因子 <span class="math inline">\(g\)</span></p>
+<p><span class="math display">\[g=2 ×
+\frac{I_{L}-I_{R}}{I_{L}+I_{R}}\]</span></p>
+<p><span
+class="math inline">\(I_L\)</span>​：器件发射的左旋圆偏振光强度； <span
+class="math inline">\(I_R\)</span>：器件发射的右旋圆偏振光强度；
+关键说明：<span class="math inline">\(g_{lum}\)</span>​
+为光致发光不对称因子，<span class="math inline">\(g_{CP−EL}\)</span>​
+为电致发光不对称因子，是衡量 spin-LEDs
+圆偏振性能的核心指标，绝对值越大，器件性能越好。</p>
+<h4 id="ciss-与-soc-的本质关联">CISS 与 SOC 的本质关联</h4>
+<p>CISS
+效应的本质，是手性体系中一种特殊的自旋轨道耦合效应，二者不是相互独立的物理现象，而是根源与表现的关系。</p>
+<p>论文中重点强调，手性钙钛矿是目前实现 CISS 效应、构建室温 spin-LEDs
+的理想材料。</p>
+<h3 id="ciss-效应在-spin-leds-中的核心应用逻辑">CISS 效应在 spin-LEDs
+中的核心应用逻辑</h3>
+<p>CISS 效应是所有手性钙钛矿 spin-LEDs 的工作核心，论文中总结了 4
+种器件实现路径，均围绕 CISS 效应的最大化利用展开。</p>
+<p>传统 spin-LEDs 依赖铁磁电极 +
+低温强磁场实现自旋极化载流子注入，而基于 CISS 效应的
+spin-LEDs，完全依靠手性钙钛矿的本征特性：</p>
+<p>手性钙钛矿层通过 CISS
+效应，将电注入的非极化载流子筛选为自旋极化载流子；</p>
+<p>自旋极化的电子与空穴在发光层中辐射复合，发射出与自旋取向对应的圆偏振光；</p>
+<p>整个过程在室温、无外加磁场、无铁磁电极的条件下完成，极大简化了器件结构，拓展了应用场景。</p>
+<h4
+id="手性钙钛矿4种核心器件结构与ciss效应作用对照表">手性钙钛矿4种核心器件结构与CISS效应作用对照表</h4>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">核心器件结构类型</th>
+<th style="text-align: left;">CISS效应的核心作用机制</th>
+<th style="text-align: left;">器件核心优势</th>
+<th style="text-align: left;">论文中代表性性能指标</th>
+<th style="text-align: left;">论文对应关键说明与文献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td
+style="text-align: left;"><strong>异质结结构<br>（手性注入层+非手性发光层）</strong></td>
+<td style="text-align: left;">1.
+二维手性钙钛矿层作为独立的自旋极化注入层，通过CISS效应对电注入的载流子进行自旋筛选，输出净自旋极化载流子；<br>2.
+自旋极化载流子被注入到相邻的非手性发光层中，与相反极性的非极化载流子形成自旋极化激子，最终辐射复合产生CP-EL；<br>3.
+手性层的CISS效应强弱直接决定器件的自旋注入效率上限。</td>
+<td style="text-align: left;">1.
+自旋极化功能与高效发光功能完全解耦，可分别优化手性注入层的CISS效应和发光层的光电性能；<br>2.
+器件结构设计灵活，可兼容钙钛矿纳米晶、传统量子点、Ⅲ-Ⅴ族多量子阱等多种发光体系。</td>
+<td style="text-align: left;">1. 最高电致发光不对称因子 <span
+class="math inline">\(g_{CP-EL}\)</span> 达 <span
+class="math inline">\(\boldsymbol{3.8×10^{-1}}\)</span>；<br>2.
+最高外量子效率 <span class="math inline">\(\text{EQE}\)</span> 达 <span
+class="math inline">\(\boldsymbol{10.53\%}\)</span>；<br>3.
+首次实现室温、无外磁场、无铁磁电极的钙钛矿spin-LEDs。</td>
+<td style="text-align: left;">1.
+2021年Beard团队里程碑工作，首次验证该结构可行性，对应论文文献[8]；<br>2.
+手性钙钛矿/Ⅲ-Ⅴ族化合物界面器件，对应论文文献[38]；<br>3.
+手性钙钛矿/CdSe/ZnS量子点器件，对应论文文献[39]。</td>
+</tr>
+<tr>
+<td
+style="text-align: left;"><strong>核壳纳米晶结构<br>（手性低维钙钛矿壳层+非手性钙钛矿核）</strong></td>
+<td style="text-align: left;">1.
+手性低维钙钛矿壳层通过CISS效应，对注入的载流子进行自旋筛选，在核壳界面处产生自旋极化载流子；<br>2.
+手性壳层同时起到<strong>自旋保护作用</strong>，抑制载流子在输运过程中的自旋弛豫与翻转，延长自旋寿命；<br>3.
+自旋极化载流子在非手性钙钛矿核内发生辐射复合，直接产生CP-EL。</td>
+<td style="text-align: left;">1.
+单组分纳米晶同时实现自旋极化与高效发光，无需构建多层异质结，极大简化器件制备工艺；<br>2.
+量子限域效应显著，可有效抑制自旋翻转；<br>3.
+溶液可加工性强，可通过喷墨打印等方式制备图案化器件，适配防伪等场景。</td>
+<td style="text-align: left;">1. 最高 <span
+class="math inline">\(g_{CP-EL}\)</span> 达 <span
+class="math inline">\(\boldsymbol{2.4×10^{-1}}\)</span>；<br>2. 最高
+<span class="math inline">\(\text{EQE}\)</span> 达 <span
+class="math inline">\(\boldsymbol{5.47\%}\)</span>；<br>3.
+室温下稳定工作，无外磁场依赖。</td>
+<td style="text-align: left;">1.
+Ye等首次提出该结构，对应论文文献[43]；<br>2.
+Jang等优化R/S-NEA手性配体，实现性能突破，对应论文文献[44]。</td>
+</tr>
+<tr>
+<td
+style="text-align: left;"><strong>准二维（quasi-2D）多相结构<br>（单发光层体系）</strong></td>
+<td style="text-align: left;">1.
+手性低n相（n=1）通过CISS效应产生自旋极化激子，是器件的自旋极化源；<br>2.
+利用准二维钙钛矿的<strong>多量子阱能量漏斗效应</strong>，在亚皮秒级（~0.2
+ps）内将自旋极化激子的能量和自旋同步传递到高n相/3D体相发光中心；<br>3.
+非手性中间相（n=2）可作为自旋传递桥梁，进一步增强CISS效应，减少自旋传递过程中的损耗；<br>4.
+自旋极化激子在体相发光中心完成辐射复合，产生高亮度、高圆偏振度的CP-EL。</td>
+<td style="text-align: left;">1.
+单薄膜实现自旋调控与发光，器件结构最简，制备工艺兼容性强；<br>2.
+可通过配体工程精准调控相分布，兼顾高发光效率与高圆偏振度；<br>3.
+可实现从深蓝光、绿光、红光到近红外的全波段CP-EL，适配全彩显示等场景。</td>
+<td style="text-align: left;">1. 最高 <span
+class="math inline">\(\text{EQE}\)</span> 达 <span
+class="math inline">\(\boldsymbol{15.42\%}\)</span>，为论文汇总的最高效率；<br>2.
+深蓝光器件最高 <span class="math inline">\(g_{CP-EL}\)</span> 达 <span
+class="math inline">\(\boldsymbol{1.75×10^{-1}}\)</span>；<br>3.
+绿光器件最高 <span class="math inline">\(g_{CP-EL}\)</span> 达 <span
+class="math inline">\(\boldsymbol{1.03×10^{-1}}\)</span>，<span
+class="math inline">\(\text{EQE}\)</span> 达13.5%；<br>4. 实现689~782
+nm近红外波段CP-EL。</td>
+<td style="text-align: left;">1.
+Yang等首次报道单层准二维手性钙钛矿spin-LEDs，对应论文文献[46]；<br>2.
+Xiao团队实现绿光、蓝光、深蓝光全波段覆盖，对应论文文献[47][48][49]；<br>3.
+Yao团队实现高效绿光、近红外器件，对应论文文献[50][51]；<br>4.
+Li等、Tang团队实现效率突破，对应论文文献[36][52][53]。</td>
+</tr>
+<tr>
+<td
+style="text-align: left;"><strong>非核壳手性钙钛矿纳米晶/量子点结构</strong></td>
+<td style="text-align: left;">1.
+通过原位配体修饰、配体交换等方式，将手性配体锚定在钙钛矿纳米晶表面；<br>2.
+手性配体通过强配位作用诱导纳米晶晶格发生手性畸变，通过CISS效应直接在纳米晶内产生本征自旋极化激子；<br>3.
+量子限域效应显著抑制激子的自旋弛豫，确保自旋极化激子在翻转前完成原位辐射复合，直接产生CP-EL；<br>4.
+手性配体同时起到缺陷钝化作用，提升纳米晶的发光效率与自旋寿命。</td>
+<td style="text-align: left;">1.
+纳米晶比表面积大，可锚定足量手性配体，最大化CISS效应的自旋筛选能力；<br>2.
+溶液加工性优异，适配旋涂、印刷等大面积器件制备工艺；<br>3.
+可通过卤素调控实现全可见光波段发光，适配多种光电器件场景。</td>
+<td style="text-align: left;">1. 最高 <span
+class="math inline">\(g_{CP-EL}\)</span> 达 <span
+class="math inline">\(\boldsymbol{2.85×10^{-1}}\)</span>，为论文汇总的最高圆偏振度；<br>2.
+最高 <span class="math inline">\(\text{EQE}\)</span> 达 <span
+class="math inline">\(\boldsymbol{16.8\%}\)</span>，同时实现最高亮度超
+<span class="math inline">\(\boldsymbol{28000\
+cd·m^{-2}}\)</span>；<br>3. 实现465 nm蓝光到660 nm红光全波段覆盖。</td>
+<td style="text-align: left;">1.
+He等通过超声辅助配体交换策略实现创纪录性能，对应论文文献[57]；<br>2.
+Yang等通过原位手性配体钝化实现高性能器件，对应论文文献[55]；<br>3.
+Chen等、Li等拓展了该体系的材料设计，对应论文文献[56][58]。</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <tags>
+        <tag>论文阅读</tag>
+        <tag>钙钛矿</tag>
+        <tag>化学</tag>
       </tags>
   </entry>
 </search>
